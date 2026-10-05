@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import {
   colleges,
   courses,
@@ -13,6 +13,8 @@ import {
 } from "@/data/colleges";
 
 type Filter<T extends string> = T | "All";
+
+const PAGE_SIZE = 6;
 
 const field =
   "block h-12 w-full rounded-2xl border border-navy/10 bg-cream px-4 text-sm text-navy shadow-none outline-none transition hover:border-navy/25 focus:border-orange focus:bg-white focus:ring-4 focus:ring-orange/15";
@@ -35,6 +37,20 @@ export default function CollegeFinder({ initialCourse }: { initialCourse: Filter
       ),
     );
   }, [course, location, type, query]);
+
+  // Page resets to 1 whenever any filter changes.
+  const filterKey = [course, location, type, query].join("|");
+  const [pageState, setPageState] = useState({ key: filterKey, page: 1 });
+  const pageCount = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
+  const page = pageState.key === filterKey ? Math.min(pageState.page, pageCount) : 1;
+  const start = (page - 1) * PAGE_SIZE;
+  const end = Math.min(start + PAGE_SIZE, results.length);
+
+  const resultsRef = useRef<HTMLDivElement>(null);
+  function goToPage(next: number) {
+    setPageState({ key: filterKey, page: next });
+    resultsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 
   const isFiltered =
     course !== "All" || location !== "All" || type !== "All" || query !== "";
@@ -134,9 +150,18 @@ export default function CollegeFinder({ initialCourse }: { initialCourse: Filter
       </div>
 
       {/* Result summary */}
-      <div className="mt-8 flex items-center justify-between gap-4">
+      <div ref={resultsRef} className="mt-8 flex scroll-mt-28 items-center justify-between gap-4">
         <p className="text-sm text-navy/70" aria-live="polite">
-          Showing <strong className="text-navy">{results.length}</strong>{" "}
+          Showing{" "}
+          {results.length > PAGE_SIZE && (
+            <>
+              <strong className="text-navy">
+                {start + 1}–{end}
+              </strong>{" "}
+              of{" "}
+            </>
+          )}
+          <strong className="text-navy">{results.length}</strong>{" "}
           {results.length === 1 ? "college" : "colleges"}
           {course !== "All" && (
             <>
@@ -163,8 +188,10 @@ export default function CollegeFinder({ initialCourse }: { initialCourse: Filter
       {/* Results */}
       {results.length > 0 ? (
         <ul className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {results.map((c) => (
-            <li key={c.name}>
+          {/* Every result stays in the HTML (so all links are crawlable);
+              only the current page is shown. */}
+          {results.map((c, i) => (
+            <li key={c.name} className={i >= start && i < end ? "animate-card-in" : "hidden"}>
               <CollegeCard college={c} highlight={course} />
             </li>
           ))}
@@ -186,8 +213,77 @@ export default function CollegeFinder({ initialCourse }: { initialCourse: Filter
           </button>
         </div>
       )}
+
+      {pageCount > 1 && (
+        <Pagination page={page} pageCount={pageCount} onChange={goToPage} />
+      )}
     </div>
   );
+}
+
+function Pagination({
+  page,
+  pageCount,
+  onChange,
+}: {
+  page: number;
+  pageCount: number;
+  onChange: (page: number) => void;
+}) {
+  const arrow =
+    "inline-flex h-11 items-center gap-1.5 rounded-full border border-navy/10 bg-white px-4 text-sm font-semibold text-navy transition hover:border-orange hover:text-orange-deep disabled:pointer-events-none disabled:opacity-40";
+
+  return (
+    <nav aria-label="College results pages" className="mt-10 flex flex-wrap items-center justify-center gap-2">
+      <button type="button" onClick={() => onChange(page - 1)} disabled={page === 1} className={arrow}>
+        <svg viewBox="0 0 20 20" className="h-4 w-4" fill="currentColor" aria-hidden="true">
+          <path d="M12.7 4.3a1 1 0 0 1 0 1.4L8.4 10l4.3 4.3a1 1 0 0 1-1.4 1.4l-5-5a1 1 0 0 1 0-1.4l5-5a1 1 0 0 1 1.4 0Z" />
+        </svg>
+        <span className="hidden sm:inline">Prev</span>
+      </button>
+
+      {pageItems(page, pageCount).map((item, i) =>
+        item === "…" ? (
+          <span key={`gap-${i}`} className="px-1 text-sm text-navy/40">…</span>
+        ) : (
+          <button
+            key={item}
+            type="button"
+            onClick={() => onChange(item)}
+            aria-current={item === page ? "page" : undefined}
+            aria-label={`Page ${item}`}
+            className={`h-11 min-w-11 rounded-full px-3 text-sm font-semibold transition ${
+              item === page
+                ? "bg-gradient-to-r from-orange to-orange-deep text-white shadow-md shadow-orange/30"
+                : "border border-navy/10 bg-white text-navy hover:border-orange"
+            }`}
+          >
+            {item}
+          </button>
+        ),
+      )}
+
+      <button type="button" onClick={() => onChange(page + 1)} disabled={page === pageCount} className={arrow}>
+        <span className="hidden sm:inline">Next</span>
+        <svg viewBox="0 0 20 20" className="h-4 w-4" fill="currentColor" aria-hidden="true">
+          <path d="M7.3 15.7a1 1 0 0 1 0-1.4L11.6 10 7.3 5.7a1 1 0 0 1 1.4-1.4l5 5a1 1 0 0 1 0 1.4l-5 5a1 1 0 0 1-1.4 0Z" />
+        </svg>
+      </button>
+    </nav>
+  );
+}
+
+/** Page numbers with ellipses, e.g. 1 … 4 5 6 … 12 */
+function pageItems(page: number, pageCount: number): (number | "…")[] {
+  if (pageCount <= 7) return Array.from({ length: pageCount }, (_, i) => i + 1);
+  const items: (number | "…")[] = [1];
+  const from = Math.max(2, page - 1);
+  const to = Math.min(pageCount - 1, page + 1);
+  if (from > 2) items.push("…");
+  for (let p = from; p <= to; p++) items.push(p);
+  if (to < pageCount - 1) items.push("…");
+  items.push(pageCount);
+  return items;
 }
 
 function CollegeCard({ college, highlight }: { college: College; highlight: string }) {
