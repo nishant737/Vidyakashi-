@@ -8,7 +8,7 @@ export default function Categories({ course }: { course?: string }) {
   return (
     <section id="categories" className="scroll-mt-24 bg-cream pb-24 sm:pb-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
-        <div className="max-w-2xl">
+        <div className="mx-auto max-w-2xl text-center lg:mx-0 lg:text-left">
           <p className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-orange">
             Categories
           </p>

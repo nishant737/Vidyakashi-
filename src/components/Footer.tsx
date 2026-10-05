@@ -16,8 +16,8 @@ export default function Footer() {
     <footer className="bg-navy text-white">
       <div className="mx-auto max-w-7xl px-4 pt-16 sm:px-8">
         {/* Featured partner strip */}
-        <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-3 rounded-3xl bg-white/5 px-6 py-5 ring-1 ring-white/10">
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-white/80">
+        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 rounded-3xl bg-white/5 px-6 py-5 text-center ring-1 ring-white/10 lg:justify-between lg:text-left">
+          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm text-white/80 lg:justify-start">
             <span className="inline-flex items-center rounded-full bg-sun px-3 py-1 font-display text-xs font-bold text-navy">
               ★ Featured
             </span>
@@ -38,9 +38,9 @@ export default function Footer() {
           </a>
         </div>
 
-        <div className="grid gap-12 py-14 lg:grid-cols-[1fr_2fr] lg:gap-16">
+        <div className="grid gap-12 py-14 text-center lg:grid-cols-[1fr_2fr] lg:gap-16 lg:text-left">
           {/* Brand */}
-          <div className="max-w-sm">
+          <div className="mx-auto max-w-sm lg:mx-0">
             <Link href="/" className="inline-block rounded-2xl bg-cream px-4 py-3">
               <Image src="/logo.png" alt="Vidyakashi" width={421} height={283} className="h-14 w-auto" />
             </Link>
@@ -86,7 +86,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 border-t border-white/10 py-6 text-xs text-white/50">
+        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 border-t border-white/10 py-6 text-center text-xs text-white/50 lg:justify-between lg:text-left">
           <p>© {new Date().getFullYear()} {site.name}. All rights reserved.</p>
           <p>College details are for guidance — always confirm with the official college website.</p>
         </div>

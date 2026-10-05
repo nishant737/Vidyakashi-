@@ -49,7 +49,7 @@ export default function About() {
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
         <div className="grid gap-14 lg:grid-cols-2 lg:gap-16">
           {/* Left: story */}
-          <div>
+          <div className="text-center lg:text-left">
             <p className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-orange">
               About Vidyakashi
             </p>
@@ -76,7 +76,7 @@ export default function About() {
               <p className="font-display text-sm font-semibold text-navy">
                 Explore by course
               </p>
-              <ul className="mt-3 flex flex-wrap gap-2">
+              <ul className="mt-3 flex flex-wrap justify-center gap-2 lg:justify-start">
                 {courses.map((course) => (
                   <li key={course}>
                     <Link
@@ -104,11 +104,11 @@ export default function About() {
             {features.map((f, i) => (
               <div
                 key={f.title}
-                className={`rounded-3xl bg-white p-7 shadow-[0_10px_40px_-15px_rgba(27,31,94,0.2)] ring-1 ring-navy/5 transition hover:-translate-y-1 ${
+                className={`rounded-3xl bg-white p-7 text-center shadow-[0_10px_40px_-15px_rgba(27,31,94,0.2)] ring-1 ring-navy/5 transition hover:-translate-y-1 sm:text-left ${
                   i % 2 === 1 ? "sm:translate-y-8 sm:hover:translate-y-7" : ""
                 }`}
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-sun/30 text-navy">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-sun/30 text-navy sm:mx-0">
                   <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
                     {f.icon}
                   </svg>
@@ -127,7 +127,7 @@ export default function About() {
         {/* How we compare */}
         <div className="mt-20 overflow-hidden rounded-[2rem] bg-navy px-6 py-10 text-white sm:px-12 sm:py-12">
           <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:items-center">
-            <div>
+            <div className="text-center lg:text-left">
               <h3 className="font-display text-2xl font-bold sm:text-3xl">
                 How we compare colleges
               </h3>
@@ -150,11 +150,11 @@ export default function About() {
             </ul>
           </div>
 
-          <div className="mt-10 border-t border-white/10 pt-8">
+          <div className="mt-10 border-t border-white/10 pt-8 text-center lg:text-left">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sun">
               Colleges across Karnataka
             </p>
-            <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/80">
+            <ul className="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-white/80 lg:justify-start">
               {locations.map((city) => (
                 <li key={city}>{city}</li>
               ))}

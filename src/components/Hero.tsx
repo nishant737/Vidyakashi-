@@ -24,7 +24,7 @@ export default function Hero() {
       <div className="pointer-events-none absolute -bottom-24 -left-24 -z-10 h-80 w-80 rounded-full bg-sun/50 blur-3xl" />
 
       <div className="mx-auto max-w-7xl px-4 pb-14 pt-8 sm:px-8 lg:flex lg:items-center lg:py-36">
-        <div className="max-w-xl">
+        <div className="mx-auto max-w-xl text-center lg:mx-0 lg:text-left">
           <h1 className="font-display text-[2.5rem] font-bold leading-[1.1] tracking-tight text-navy sm:text-5xl lg:text-6xl">
             Education for a{" "}
             <span className="relative inline-block">
@@ -34,12 +34,27 @@ export default function Hero() {
             Future
           </h1>
 
-          <p className="mt-6 max-w-md text-base leading-relaxed text-navy/75 sm:text-lg">
+          {/* Mobile & tablet: photo between the heading and the text */}
+          <div className="relative mx-auto mt-8 max-w-lg lg:hidden">
+            <div className="absolute -inset-3 -z-10 rounded-[2rem] bg-sun/40 blur-2xl" />
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[1.75rem] shadow-[0_20px_50px_-20px_rgba(27,31,94,0.35)] ring-4 ring-white">
+              <Image
+                src="/hero-india.jpg"
+                alt="Schoolgirl in uniform with classmates in an Indian classroom"
+                fill
+                priority
+                sizes="(min-width: 1024px) 1px, (min-width: 640px) 512px, 100vw"
+                className="object-cover object-[50%_35%]"
+              />
+            </div>
+          </div>
+
+          <p className="mx-auto mt-8 max-w-md text-base leading-relaxed text-navy/75 sm:text-lg lg:mx-0 lg:mt-6">
             Discover the best colleges in Karnataka for your course —
             engineering, medical, PU, Ayurveda, hotel management and more — all in one place.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4 lg:mt-9">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 lg:mt-9 lg:justify-start">
             <Link
               href="#categories"
               className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange to-orange-deep px-8 py-4 font-display text-sm font-semibold text-white shadow-xl shadow-orange/30 transition hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-orange/40"
@@ -53,21 +68,6 @@ export default function Hero() {
             >
               Learn more
             </Link>
-          </div>
-        </div>
-
-        {/* Mobile & tablet: photo as a rounded card below the text */}
-        <div className="relative mt-10 lg:hidden">
-          <div className="absolute -inset-3 -z-10 rounded-[2rem] bg-sun/40 blur-2xl" />
-          <div className="relative aspect-[4/3] overflow-hidden rounded-[1.75rem] shadow-[0_20px_50px_-20px_rgba(27,31,94,0.35)] ring-4 ring-white sm:aspect-[16/9]">
-            <Image
-              src="/hero-india.jpg"
-              alt="Schoolgirl in uniform with classmates in an Indian classroom"
-              fill
-              priority
-              sizes="(min-width: 1024px) 1px, 100vw"
-              className="object-cover object-[50%_35%]"
-            />
           </div>
         </div>
       </div>

@@ -67,8 +67,8 @@ export default function CollegeFinder({ initialCourse }: { initialCourse: Filter
       {/* Filters */}
       <div className="rounded-3xl bg-white p-5 shadow-[0_10px_40px_-15px_rgba(27,31,94,0.2)] ring-1 ring-navy/5 sm:p-7">
         <div>
-          <p className="font-display text-sm font-semibold text-navy">Course</p>
-          <div className="mt-3 flex flex-wrap gap-2">
+          <p className="text-center font-display text-sm font-semibold text-navy lg:text-left">Course</p>
+          <div className="mt-3 flex flex-wrap justify-center gap-2 lg:justify-start">
             {(["All", ...courses] as const).map((c) => (
               <button
                 key={c}

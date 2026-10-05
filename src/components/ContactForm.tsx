@@ -56,10 +56,10 @@ export default function ContactForm() {
       onSubmit={sendWhatsApp}
       className="rounded-3xl bg-white p-6 shadow-[0_10px_40px_-15px_rgba(27,31,94,0.25)] ring-1 ring-navy/5 sm:p-8"
     >
-      <h3 className="font-display text-xl font-semibold text-navy">
+      <h3 className="text-center font-display text-xl font-semibold text-navy lg:text-left">
         Get free guidance
       </h3>
-      <p className="mt-1 text-sm text-navy/60">
+      <p className="mt-1 text-center text-sm text-navy/60 lg:text-left">
         Tell us what you want to study and we&rsquo;ll help you shortlist colleges.
       </p>
 

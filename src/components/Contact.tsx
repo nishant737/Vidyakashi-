@@ -31,7 +31,7 @@ export default function Contact() {
     <section id="contact" className="relative scroll-mt-24 overflow-hidden bg-cream py-20 sm:py-28">
       <div className="pointer-events-none absolute -right-32 top-10 h-96 w-96 rounded-full bg-sun/40 blur-3xl" />
       <div className="relative mx-auto grid max-w-7xl gap-12 px-4 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-        <div>
+        <div className="text-center lg:text-left">
           <p className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-orange">
             Contact us
           </p>
@@ -43,7 +43,7 @@ export default function Contact() {
             help you compare colleges and understand the admission process.
           </p>
 
-          <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+          <ul className="mt-8 grid gap-4 text-left sm:grid-cols-2">
             {details.map((d) => {
               const inner = (
                 <>
