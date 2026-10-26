@@ -55,9 +55,9 @@ const alvas: Pick<College, "city" | "alsoIn" | "area" | "type" | "featured"> = {
 // Add, remove or edit colleges here; filters update automatically.
 export const colleges: College[] = [
   // ── Featured: Alva's Education Foundation, Moodbidri ──
+  { ...alvas, name: "Alva's English Medium High School", courses: ["High School"], programs: "Secondary school · NCERT syllabus", website: "https://alvasschools.com/alvas-english-medium-high-school/" },
   { ...alvas, name: "Alva's Institute of Engineering & Technology", courses: ["Engineering"], programs: "B.E. / B.Tech · M.Tech · MBA", website: "https://www.aiet.org.in" },
   { ...alvas, name: "Alva's Pre-University College", courses: ["PU College"], programs: "Science · Commerce · Arts", website: "https://alvaspucollege.org" },
-  { ...alvas, name: "Alva's Schools", courses: ["High School"], programs: "Residential high school", website: "https://alvasschools.com" },
   { ...alvas, name: "Alva's Central School", courses: ["High School"], programs: "CBSE school", website: "https://alvascentralschool.com" },
   { ...alvas, name: "Alva's Degree College", courses: ["B.Sc", "Commerce", "Arts"], programs: "B.Sc · B.Com · BA · BSW · BVA", website: "https://alvas.org/institutions/alvas-degree-college/" },
   { ...alvas, name: "Alva's Ayurveda Medical College", courses: ["Ayurveda"], programs: "BAMS", website: "https://alvas.org/institutions/alvas-ayurveda-medical-college/" },

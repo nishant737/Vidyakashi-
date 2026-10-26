@@ -3,8 +3,10 @@ import Logo from "./Logo";
 
 const links = [
   { href: "/", label: "Home", active: true },
-  { href: "#about", label: "About" },
-  { href: "#categories", label: "Categories" },
+  { href: "#alvas-school", label: "Alva's School" },
+  { href: "#results", label: "PU Toppers" },
+  { href: "#nudisiri", label: "Nudisiri" },
+  { href: "#categories", label: "Colleges" },
   { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact Us" },
 ];
@@ -15,7 +17,7 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-8">
         <Logo />
 
-        <ul className="hidden items-center gap-8 md:flex">
+        <ul className="hidden items-center gap-6 lg:flex xl:gap-8">
           {links.map((link) => (
             <li key={link.label}>
               <Link

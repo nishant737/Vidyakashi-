@@ -1,35 +1,35 @@
 const faqs = [
   {
-    q: "How do I choose the right college for my course in Karnataka?",
-    a: "Start with the course, not the college name. Use the filters above to list colleges that offer your course in your preferred city, then compare placements, faculty, fees, accreditation and hostel facilities before you apply.",
+    q: "Where is Alva's English Medium High School?",
+    a: "Alva's English Medium High School is in Moodubidire (Moodbidri), Dakshina Kannada, Karnataka – 574227. It is run by Alva's Education Foundation, about 35 km from Mangaluru.",
   },
   {
-    q: "What is KCET and who should write it?",
-    a: "KCET (Karnataka Common Entrance Test) is conducted by the Karnataka Examinations Authority (KEA) for government-quota seats in engineering, pharmacy and several other professional courses. For engineering, the rank is based on both your CET score and your 2nd PU marks in the core subjects.",
+    q: "Which syllabus does Alva's English Medium High School follow?",
+    a: "The school follows the NCERT syllabus with English as the medium of instruction. Classes are kept to a maximum of 35 students, and the school offers regular IIT coaching and extra support for slow learners.",
   },
   {
-    q: "What is COMEDK UGET?",
-    a: "COMEDK UGET is an entrance exam for admission to private and minority engineering colleges in Karnataka. Many students write both KCET and COMEDK to keep more options open.",
+    q: "How are the SSLC results at Alva's High School?",
+    a: "The school recorded 100% SSLC results in each of its first five batches (2011–12 to 2015–16), with top scores of 618 out of 625. For the latest year's results, check with the school office or the official school website.",
   },
   {
-    q: "How do admissions to MBBS and Ayurveda (BAMS) work?",
-    a: "Both MBBS and BAMS admissions are through NEET UG. Karnataka state-quota seats are allotted through KEA counselling, while all-India quota seats have separate national counselling.",
+    q: "Does Alva's High School have a sports quota?",
+    a: "Yes. Students of classes 8 to 10 can apply under the sports quota for athletics (boys and girls) and basketball (girls). Notifications are published in March and April, followed by a 20-day selection camp. Selected students get free hostel, food and coaching.",
   },
   {
-    q: "Which PU stream should I choose — Science, Commerce or Arts?",
-    a: "Choose Science (PCMB/PCMC) if you are aiming for engineering, medicine or pure sciences; Commerce for B.Com, CA, finance and business; and Arts for humanities, law, journalism and civil services. Pick the stream that matches your interest and long-term goal.",
+    q: "How do I apply for admission to Alva's English Medium High School?",
+    a: "Contact the school office on +91 77602 72525 or ao-schools@alvas.org, or use the enquiry option on the official school website, alvasschools.com.",
   },
   {
-    q: "Can I study hotel management after PU?",
-    a: "Yes. Most B.Sc Hotel Management programmes accept students from any PU stream. Some institutes, such as the Institutes of Hotel Management, admit students through the NCHM JEE entrance exam.",
+    q: "What can students study after class 10 at Alva's?",
+    a: "Students can continue at Alva's Pre-University College in Moodbidri in the Science, Commerce or Arts streams. In the 2026 II PUC exam, Alva's student Disha secured the state first rank in Commerce with 600 out of 600.",
   },
   {
-    q: "Why is Alva's featured on Vidyakashi?",
-    a: "Alva's Education Foundation in Moodbidri runs institutions from school and PU right up to degree, engineering, Ayurveda, nursing, pharmacy and hotel management on one campus — so it appears in almost every category for students in Mangaluru and Udupi.",
+    q: "What is Alva's Nudisiri?",
+    a: "Alva's Nudisiri is the Kannada literary and cultural festival organised by Alva's Education Foundation in Moodbidri. In 2027 it is being held together with Alva's Virasat as 'Alva's Nudisiri-Virasat' from 6 to 10 January 2027.",
   },
   {
-    q: "Are the college links official websites?",
-    a: "Yes. Every “Visit website” button opens the college's official website, so you can check the latest admission details, fees and deadlines directly with the institution.",
+    q: "Are the links on Vidyakashi official websites?",
+    a: "Yes. Every \u201cVisit website\u201d button opens the institution's official website, so you can confirm the latest admission details, fees and dates directly with the school or college.",
   },
 ];
 
@@ -56,11 +56,11 @@ export default function Faq() {
             FAQ
           </p>
           <h2 className="mt-3 font-display text-3xl font-bold leading-tight tracking-tight text-navy sm:text-4xl lg:text-[44px]">
-            Questions students &amp; parents ask
+            Alva&rsquo;s High School — questions parents ask
           </h2>
           <p className="mt-4 text-base leading-relaxed text-navy/75 sm:text-lg">
-            Quick answers about admissions, entrance exams and choosing the
-            right course in Karnataka.
+            Quick answers about Alva&rsquo;s English Medium High School, admissions,
+            results and life at Alva&rsquo;s in Moodbidri.
           </p>
           <a
             href="#contact"

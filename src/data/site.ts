@@ -9,7 +9,7 @@ export const site = {
 };
 
 export const featuredPartner = {
-  name: "Alva's Education Foundation",
+  name: "Alva's English Medium High School",
   place: "Moodbidri, Dakshina Kannada",
-  website: "https://alvas.org",
+  website: "https://alvasschools.com/alvas-english-medium-high-school/",
 };

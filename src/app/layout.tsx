@@ -14,10 +14,28 @@ const lexend = Lexend({
   weight: ["500", "600", "700", "800"],
 });
 
+const description =
+  "Alva's English Medium High School, Moodbidri — NCERT syllabus, SSLC results, admissions and sports quota. Plus Alva's PU toppers in Karnataka, Alva's Nudisiri and the best colleges in Karnataka.";
+
 export const metadata: Metadata = {
-  title: "Vidyakashi — Education for a Brighter Future",
-  description:
-    "Find and compare the best colleges in Karnataka by course and location — engineering, medical, PU, Ayurveda, hotel management and more.",
+  title: "Alva's English Medium High School Moodbidri — Results, Admissions & Nudisiri | Vidyakashi",
+  description,
+  keywords: [
+    "Alva's English Medium High School",
+    "Alva's High School Moodbidri",
+    "Alva's school Moodbidri",
+    "Alva's PU College toppers",
+    "Alva's Nudisiri",
+    "best school in Moodbidri",
+    "best school in Mangalore",
+  ],
+  openGraph: {
+    title: "Alva's English Medium High School, Moodbidri | Vidyakashi",
+    description,
+    type: "website",
+    locale: "en_IN",
+    siteName: "Vidyakashi",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

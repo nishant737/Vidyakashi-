@@ -5,7 +5,9 @@ import { featuredPartner, site } from "@/data/site";
 
 const quickLinks = [
   { href: "/", label: "Home" },
-  { href: "#about", label: "About" },
+  { href: "#alvas-school", label: "Alva's English Medium High School" },
+  { href: "#results", label: "Alva's PU toppers" },
+  { href: "#nudisiri", label: "Alva's Nudisiri" },
   { href: "#categories", label: "Find colleges" },
   { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact Us" },
@@ -45,8 +47,8 @@ export default function Footer() {
               <Image src="/logo.png" alt="Vidyakashi" width={421} height={283} className="h-14 w-auto" />
             </Link>
             <p className="mt-5 text-sm leading-relaxed text-white/70">
-              Your guide to the best colleges in Karnataka — compare by course
-              and location, and go straight to each college&rsquo;s official website.
+              Your guide to Alva&rsquo;s English Medium High School, Moodbidri — and to the
+              best PU colleges and colleges across Karnataka.
             </p>
             <ul className="mt-5 flex flex-col gap-2 text-sm text-white/80">
               <li>
