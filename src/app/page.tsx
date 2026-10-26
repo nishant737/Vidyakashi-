@@ -1,4 +1,3 @@
-import AlvasSchool from "@/components/AlvasSchool";
 import Categories from "@/components/Categories";
 import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
@@ -7,6 +6,7 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Nudisiri from "@/components/Nudisiri";
 import PuResults from "@/components/PuResults";
+import TopSchools from "@/components/TopSchools";
 
 export default async function Home({ searchParams }: PageProps<"/">) {
   const { course } = await searchParams;
@@ -16,7 +16,7 @@ export default async function Home({ searchParams }: PageProps<"/">) {
       <main className="flex-1">
         <Navbar />
         <Hero />
-        <AlvasSchool />
+        <TopSchools />
         <PuResults />
         <Nudisiri />
         <Categories course={typeof course === "string" ? course : undefined} />

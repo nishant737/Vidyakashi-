@@ -1,8 +1,8 @@
-import { alvasPu, puToppers } from "@/data/alvas";
-import { Arrow } from "./Navbar";
+import { alvasPu } from "@/data/alvas";
+import { puc2026 } from "@/data/schools";
 
 export default function PuResults() {
-  const [headline, ...rest] = puToppers;
+  const [headline, ...rest] = puc2026.toppers;
 
   return (
     <section id="results" className="relative scroll-mt-24 overflow-hidden bg-cream py-20 sm:py-28">
@@ -11,82 +11,82 @@ export default function PuResults() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <p className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-orange">
-            After high school · Alva&rsquo;s PU College
+            Results
           </p>
           <h2 className="mt-3 font-display text-3xl font-bold leading-tight tracking-tight text-navy sm:text-4xl lg:text-[44px]">
-            Alva&rsquo;s PU toppers in Karnataka
+            Karnataka II PUC 2026 toppers
           </h2>
           <p className="mt-4 text-base leading-relaxed text-navy/75 sm:text-lg">
-            After class 10, students can continue at {alvasPu.name} in Moodbidri — whose
-            students regularly feature among Karnataka&rsquo;s II PUC state rank holders.
+            The state recorded a {puc2026.passPercentage} pass percentage, with coastal Karnataka
+            leading the way —{" "}
+            {puc2026.topDistricts.map((d, i) => (
+              <span key={d.name}>
+                {i > 0 && " and "}
+                <strong className="text-navy">{d.name}</strong> ({d.pass})
+              </span>
+            ))}
+            .
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-          {/* 2026 state topper */}
+        <div className="mt-12 grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+          {/* State topper */}
           <div className="relative overflow-hidden rounded-[2rem] bg-navy p-8 text-center text-white sm:p-10 lg:text-left">
             <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-sun/25 blur-2xl" />
             <p className="relative inline-flex rounded-full bg-sun px-3 py-1 font-display text-xs font-bold text-navy">
-              II PUC {headline.year} · {headline.rank}
+              {headline.stream} · {headline.note}
             </p>
             <p className="relative mt-6 font-display text-6xl font-bold sm:text-7xl">
-              {headline.marks}
-              <span className="text-3xl text-white/60 sm:text-4xl">/600</span>
+              600<span className="text-3xl text-white/60 sm:text-4xl">/600</span>
             </p>
-            <h3 className="relative mt-4 font-display text-2xl font-semibold">
-              {headline.name} — {headline.stream}
-            </h3>
-            <p className="relative mt-2 text-white/70">
-              A perfect score and the first rank in Karnataka in the {headline.stream} stream.
+            <h3 className="relative mt-4 font-display text-2xl font-semibold">{headline.names}</h3>
+            <p className="relative mt-1 text-white/70">{headline.college}</p>
+            <p className="relative mt-4 text-sm leading-relaxed text-white/70">
+              A perfect score and the state&rsquo;s first rank in Commerce. {alvasPu.name} also had
+              four state 2nd rank holders in 2025.
             </p>
             <a
-              href={headline.source}
+              href={alvasPu.website}
               target="_blank"
               rel="noopener"
-              className="relative mt-4 inline-block text-xs text-white/50 underline hover:text-sun"
+              className="relative mt-5 inline-block font-display text-sm font-semibold text-sun hover:underline"
             >
-              Source: Daijiworld, 9 April {headline.year}
+              Visit Alva&rsquo;s PU College →
             </a>
           </div>
 
-          {/* 2025 rank holders */}
+          {/* Other toppers */}
           <div className="rounded-[2rem] bg-white p-6 shadow-[0_10px_40px_-15px_rgba(27,31,94,0.25)] ring-1 ring-navy/5 sm:p-8">
             <h3 className="text-center font-display text-xl font-semibold text-navy sm:text-left">
-              II PUC {rest[0].year} — four state 2nd rank holders
+              More top scorers across Karnataka
             </h3>
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+            <ul className="mt-6 flex flex-col divide-y divide-navy/5">
               {rest.map((t) => (
-                <li key={t.name} className="rounded-2xl bg-cream p-5 ring-1 ring-navy/5">
-                  <p className="font-display text-3xl font-bold text-navy">
-                    {t.marks}
-                    <span className="text-base text-navy/50">/600</span>
-                  </p>
-                  <p className="mt-2 font-semibold text-navy">{t.name}</p>
-                  <p className="text-sm text-navy/60">
-                    {t.stream} · {t.rank}
-                  </p>
+                <li key={t.names} className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 py-4">
+                  <div className="min-w-0">
+                    <p className="font-semibold text-navy">{t.names}</p>
+                    <p className="text-sm text-navy/60">
+                      {t.college} · {t.stream}
+                    </p>
+                  </div>
+                  <div className="text-right">
+                    <p className="font-display text-xl font-bold text-navy">{t.score}</p>
+                    {t.note && <p className="text-xs font-semibold text-orange-deep">{t.note}</p>}
+                  </div>
                 </li>
               ))}
             </ul>
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 sm:justify-between">
-              <a
-                href={rest[0].source}
-                target="_blank"
-                rel="noopener"
-                className="text-xs text-navy/50 underline hover:text-orange-deep"
-              >
-                Source: Alva&rsquo;s PU College
+            <p className="mt-4 text-xs text-navy/50">
+              Sources:{" "}
+              <a href={puc2026.toppersSource} target="_blank" rel="noopener" className="underline hover:text-orange-deep">
+                Daijiworld
               </a>
-              <a
-                href={alvasPu.website}
-                target="_blank"
-                rel="noopener"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange to-orange-deep px-5 py-3 font-display text-sm font-semibold text-white shadow-lg shadow-orange/30 transition hover:-translate-y-0.5"
-              >
-                Visit Alva&rsquo;s PU College
-                <Arrow />
+              ,{" "}
+              <a href={puc2026.statsSource} target="_blank" rel="noopener" className="underline hover:text-orange-deep">
+                Careers360
               </a>
-            </div>
+              . Official results: karresults.nic.in
+            </p>
           </div>
         </div>
       </div>

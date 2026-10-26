@@ -3,9 +3,9 @@ import Logo from "./Logo";
 
 const links = [
   { href: "/", label: "Home", active: true },
-  { href: "#alvas-school", label: "Alva's School" },
-  { href: "#results", label: "PU Toppers" },
-  { href: "#nudisiri", label: "Nudisiri" },
+  { href: "#schools", label: "Schools" },
+  { href: "#results", label: "PUC Toppers" },
+  { href: "#nudisiri", label: "Events" },
   { href: "#categories", label: "Colleges" },
   { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact Us" },

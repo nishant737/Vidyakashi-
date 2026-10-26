@@ -19,7 +19,7 @@ export default function Nudisiri() {
       <div className="relative mx-auto grid max-w-7xl gap-12 px-4 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16">
         <div className="text-center lg:text-left">
           <p className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-sun">
-            Culture at Alva&rsquo;s
+            Events · Coming up
           </p>
           <h2 className="mt-3 font-display text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-[44px]">
             {nudisiri.name} — Moodbidri&rsquo;s festival of Kannada literature &amp; culture

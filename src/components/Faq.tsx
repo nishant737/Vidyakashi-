@@ -1,27 +1,27 @@
 const faqs = [
   {
-    q: "Where is Alva's English Medium High School?",
-    a: "Alva's English Medium High School is in Moodubidire (Moodbidri), Dakshina Kannada, Karnataka – 574227. It is run by Alva's Education Foundation, about 35 km from Mangaluru.",
+    q: "How do I choose the right school for my child in Karnataka?",
+    a: "Look at the board (State, CBSE, ICSE or NCERT-based), board exam results, class sizes, teaching support, sports and co-curricular activities, transport and fees. Visit the campus and speak to the school office before applying.",
   },
   {
-    q: "Which syllabus does Alva's English Medium High School follow?",
-    a: "The school follows the NCERT syllabus with English as the medium of instruction. Classes are kept to a maximum of 35 students, and the school offers regular IIT coaching and extra support for slow learners.",
+    q: "Which are some of the top schools in Mangaluru, Udupi and Moodbidri?",
+    a: "Well-regarded options include Alva's English Medium High School and Alva's Central School in Moodbidri, Lourdes Central School, Manipal School and Kendriya Vidyalaya No. 1 in Mangaluru, and Silas International School in Udupi. See the schools section above for links to their official websites.",
   },
   {
-    q: "How are the SSLC results at Alva's High School?",
-    a: "The school recorded 100% SSLC results in each of its first five batches (2011–12 to 2015–16), with top scores of 618 out of 625. For the latest year's results, check with the school office or the official school website.",
+    q: "Where is Alva's English Medium High School and which syllabus does it follow?",
+    a: "Alva's English Medium High School is in Moodubidire (Moodbidri), Dakshina Kannada – 574227, and is run by Alva's Education Foundation. It follows the NCERT syllabus, keeps classes to a maximum of 35 students and recorded 100% SSLC results in its first five batches. For admissions, call +91 77602 72525 or email ao-schools@alvas.org.",
   },
   {
-    q: "Does Alva's High School have a sports quota?",
-    a: "Yes. Students of classes 8 to 10 can apply under the sports quota for athletics (boys and girls) and basketball (girls). Notifications are published in March and April, followed by a 20-day selection camp. Selected students get free hostel, food and coaching.",
+    q: "Who topped the Karnataka II PUC exam in 2026?",
+    a: "In Commerce, Disha of Alva's College, Moodbidri secured the state first rank with a perfect 600 out of 600. In Science, Samanyu S Shetty and Nandan Nayak of Expert College topped the state with 99.67%. Udupi and Dakshina Kannada recorded the highest district pass percentages.",
   },
   {
-    q: "How do I apply for admission to Alva's English Medium High School?",
-    a: "Contact the school office on +91 77602 72525 or ao-schools@alvas.org, or use the enquiry option on the official school website, alvasschools.com.",
+    q: "Which PU stream should I choose — Science, Commerce or Arts?",
+    a: "Choose Science (PCMB/PCMC) for engineering, medicine or pure sciences; Commerce for B.Com, CA, finance and business; and Arts for humanities, law, journalism and civil services. Pick the stream that matches your interests and long-term goals.",
   },
   {
-    q: "What can students study after class 10 at Alva's?",
-    a: "Students can continue at Alva's Pre-University College in Moodbidri in the Science, Commerce or Arts streams. In the 2026 II PUC exam, Alva's student Disha secured the state first rank in Commerce with 600 out of 600.",
+    q: "Which entrance exams are needed for engineering and medical courses in Karnataka?",
+    a: "KCET (conducted by KEA) and COMEDK UGET are used for engineering admissions, while MBBS and BAMS admissions are through NEET UG, with state-quota seats allotted through KEA counselling.",
   },
   {
     q: "What is Alva's Nudisiri?",
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "Are the links on Vidyakashi official websites?",
-    a: "Yes. Every \u201cVisit website\u201d button opens the institution's official website, so you can confirm the latest admission details, fees and dates directly with the school or college.",
+    a: "Yes. Every school and college link opens the institution's official website, so you can confirm the latest admission details, fees and dates directly with them.",
   },
 ];
 
@@ -56,11 +56,11 @@ export default function Faq() {
             FAQ
           </p>
           <h2 className="mt-3 font-display text-3xl font-bold leading-tight tracking-tight text-navy sm:text-4xl lg:text-[44px]">
-            Alva&rsquo;s High School — questions parents ask
+            Questions students &amp; parents ask
           </h2>
           <p className="mt-4 text-base leading-relaxed text-navy/75 sm:text-lg">
-            Quick answers about Alva&rsquo;s English Medium High School, admissions,
-            results and life at Alva&rsquo;s in Moodbidri.
+            Quick answers about schools, admissions, results and entrance exams
+            in Karnataka.
           </p>
           <a
             href="#contact"

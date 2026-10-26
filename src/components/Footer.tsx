@@ -5,9 +5,9 @@ import { featuredPartner, site } from "@/data/site";
 
 const quickLinks = [
   { href: "/", label: "Home" },
-  { href: "#alvas-school", label: "Alva's English Medium High School" },
-  { href: "#results", label: "Alva's PU toppers" },
-  { href: "#nudisiri", label: "Alva's Nudisiri" },
+  { href: "#schools", label: "Top schools" },
+  { href: "#results", label: "II PUC toppers" },
+  { href: "#nudisiri", label: "Events" },
   { href: "#categories", label: "Find colleges" },
   { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact Us" },
@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 rounded-3xl bg-white/5 px-6 py-5 text-center ring-1 ring-white/10 lg:justify-between lg:text-left">
           <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm text-white/80 lg:justify-start">
             <span className="inline-flex items-center rounded-full bg-sun px-3 py-1 font-display text-xs font-bold text-navy">
-              ★ Featured
+              ★ Featured school
             </span>
             <span>
               <a href={featuredPartner.website} target="_blank" rel="noopener" className="font-semibold text-white hover:text-sun">
@@ -47,8 +47,8 @@ export default function Footer() {
               <Image src="/logo.png" alt="Vidyakashi" width={421} height={283} className="h-14 w-auto" />
             </Link>
             <p className="mt-5 text-sm leading-relaxed text-white/70">
-              Your guide to Alva&rsquo;s English Medium High School, Moodbidri — and to the
-              best PU colleges and colleges across Karnataka.
+              Your guide to the best schools and colleges in Karnataka — compare by course
+              and location, and go straight to each institution&rsquo;s official website.
             </p>
             <ul className="mt-5 flex flex-col gap-2 text-sm text-white/80">
               <li>

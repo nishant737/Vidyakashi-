@@ -14,22 +14,25 @@ const lexend = Lexend({
 });
 
 const description =
-  "Alva's English Medium High School, Moodbidri — NCERT syllabus, SSLC results, admissions and sports quota. Plus Alva's PU toppers in Karnataka, Alva's Nudisiri and the best colleges in Karnataka.";
+  "Find the best schools and colleges in Karnataka — top high schools like Alva's English Medium High School, Moodbidri, II PUC 2026 toppers, PU and degree colleges, and events like Alva's Nudisiri.";
 
 export const metadata: Metadata = {
-  title: "Alva's English Medium High School Moodbidri — Results, Admissions & Nudisiri | Vidyakashi",
+  title: "Best Schools & Colleges in Karnataka — Mangaluru, Udupi & Moodbidri | Vidyakashi",
   description,
   keywords: [
+    "best schools in Karnataka",
+    "best schools in Mangalore",
+    "best schools in Udupi",
+    "Karnataka II PUC toppers 2026",
     "Alva's English Medium High School",
     "Alva's High School Moodbidri",
     "Alva's school Moodbidri",
     "Alva's PU College toppers",
     "Alva's Nudisiri",
     "best school in Moodbidri",
-    "best school in Mangalore",
   ],
   openGraph: {
-    title: "Alva's English Medium High School, Moodbidri | Vidyakashi",
+    title: "Best Schools & Colleges in Karnataka | Vidyakashi",
     description,
     type: "website",
     locale: "en_IN",

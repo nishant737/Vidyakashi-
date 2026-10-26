@@ -36,11 +36,11 @@ export default function Contact() {
             Contact us
           </p>
           <h2 className="mt-3 font-display text-3xl font-bold leading-tight tracking-tight text-navy sm:text-4xl lg:text-[44px]">
-            Questions about Alva&rsquo;s school or colleges?
+            Questions about schools or colleges?
           </h2>
           <p className="mt-4 text-base leading-relaxed text-navy/75 sm:text-lg">
-            Talk to us. Whether it&rsquo;s admission to Alva&rsquo;s English Medium High School,
-            PU streams or choosing a college, we&rsquo;ll help you understand your options.
+            Talk to us. Whether it&rsquo;s choosing a school for your child, a PU stream or a
+            college, we&rsquo;ll help you understand your options.
           </p>
 
           <ul className="mt-8 grid gap-4 text-left sm:grid-cols-2">

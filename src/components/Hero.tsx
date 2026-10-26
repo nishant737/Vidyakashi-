@@ -26,7 +26,7 @@ export default function Hero() {
       <div className="mx-auto max-w-7xl px-4 pb-14 pt-8 sm:px-8 lg:flex lg:items-center lg:py-36">
         <div className="mx-auto max-w-xl text-center lg:mx-0 lg:text-left">
           <p className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/80 px-3.5 py-1.5 font-display text-xs font-semibold text-navy shadow-sm ring-1 ring-navy/10 backdrop-blur">
-            <span className="text-orange">★</span> Alva&rsquo;s English Medium High School · Moodbidri
+            <span className="text-orange">★</span> Karnataka&rsquo;s school &amp; college guide
           </p>
           <h1 className="font-display text-[2.5rem] font-bold leading-[1.1] tracking-tight text-navy sm:text-5xl lg:text-6xl">
             Education for a{" "}
@@ -53,17 +53,16 @@ export default function Hero() {
           </div>
 
           <p className="mx-auto mt-8 max-w-md text-base leading-relaxed text-navy/75 sm:text-lg lg:mx-0 lg:mt-6">
-            Your guide to Alva&rsquo;s English Medium High School, Moodbidri — NCERT syllabus,
-            strong SSLC results, sports and culture — plus Alva&rsquo;s PU toppers, Alva&rsquo;s
-            Nudisiri and the best colleges in Karnataka.
+            Discover the best schools and colleges in Karnataka — top high schools in
+            Mangaluru, Udupi and Moodbidri, II PUC toppers, and PU and degree colleges across the state.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 lg:mt-9 lg:justify-start">
             <Link
-              href="#alvas-school"
+              href="#schools"
               className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange to-orange-deep px-8 py-4 font-display text-sm font-semibold text-white shadow-xl shadow-orange/30 transition hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-orange/40"
             >
-              Explore Alva&rsquo;s School
+              Explore top schools
               <Arrow />
             </Link>
             <Link
