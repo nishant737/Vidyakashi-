@@ -43,7 +43,7 @@ export default function TopSchools() {
             </span>
           </h2>
           <p className="mt-4 text-base leading-relaxed text-navy/75 sm:text-lg">
-            Well-regarded high schools in Mangaluru, Udupi, Moodbidri and Bengaluru —
+            Well-regarded high schools in Mangaluru, Udupi, Moodbidri and Bengaluru,
             with links to each school&rsquo;s official website.
           </p>
         </div>
@@ -61,7 +61,7 @@ export default function TopSchools() {
             <p className="mt-4 text-base leading-relaxed text-navy/75">
               Run by Alva&rsquo;s Education Foundation, the school began in {alvasSchool.started} with 99
               students and has grown to around {alvasSchool.students} students and {alvasSchool.teachers}{" "}
-              teachers — combining academics with sports and culture.
+              teachers, combining academics with sports and culture.
             </p>
             <ul className="mt-6 grid gap-2.5 text-left text-sm text-navy/80 sm:grid-cols-2">
               {featuredPoints.map((p) => (

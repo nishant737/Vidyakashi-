@@ -53,7 +53,7 @@ export default function Hero() {
           </div>
 
           <p className="mx-auto mt-8 max-w-md text-base leading-relaxed text-navy/75 sm:text-lg lg:mx-0 lg:mt-6">
-            Discover the best schools and colleges in Karnataka — top high schools in
+            Discover the best schools and colleges in Karnataka: top high schools in
             Mangaluru, Udupi and Moodbidri, II PUC toppers, and PU and degree colleges across the state.
           </p>
 

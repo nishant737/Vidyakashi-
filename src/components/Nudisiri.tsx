@@ -22,12 +22,12 @@ export default function Nudisiri() {
             Events · Coming up
           </p>
           <h2 className="mt-3 font-display text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-[44px]">
-            {nudisiri.name} — Moodbidri&rsquo;s festival of Kannada literature &amp; culture
+            {nudisiri.name}: Moodbidri&rsquo;s festival of Kannada literature &amp; culture
           </h2>
           <p className="mt-5 text-base leading-relaxed text-white/75 sm:text-lg">
             Alva&rsquo;s Nudisiri is the Kannada literary and cultural festival organised by Alva&rsquo;s
             Education Foundation in Moodbidri. In 2027 it joins the Alva&rsquo;s Virasat cultural festival as{" "}
-            <strong className="text-white">{nudisiri.combinedName}</strong> — the {nudisiri.nudisiriEdition} Nudisiri
+            <strong className="text-white">{nudisiri.combinedName}</strong>, the {nudisiri.nudisiriEdition} Nudisiri
             and {nudisiri.virasatEdition} Virasat.
           </p>
 

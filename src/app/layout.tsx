@@ -14,10 +14,10 @@ const lexend = Lexend({
 });
 
 const description =
-  "Find the best schools and colleges in Karnataka — top high schools like Alva's English Medium High School, Moodbidri, II PUC 2026 toppers, PU and degree colleges, and events like Alva's Nudisiri.";
+  "Find the best schools and colleges in Karnataka: top high schools like Alva's English Medium High School, Moodbidri, II PUC 2026 toppers, PU and degree colleges, and events like Alva's Nudisiri.";
 
 export const metadata: Metadata = {
-  title: "Best Schools & Colleges in Karnataka — Mangaluru, Udupi & Moodbidri | Vidyakashi",
+  title: "Best Schools & Colleges in Karnataka: Mangaluru, Udupi & Moodbidri | Vidyakashi",
   description,
   keywords: [
     "best schools in Karnataka",

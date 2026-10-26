@@ -18,7 +18,7 @@ export default function PuResults() {
           </h2>
           <p className="mt-4 text-base leading-relaxed text-navy/75 sm:text-lg">
             The state recorded a {puc2026.passPercentage} pass percentage, with coastal Karnataka
-            leading the way —{" "}
+            leading the way:{" "}
             {puc2026.topDistricts.map((d, i) => (
               <span key={d.name}>
                 {i > 0 && " and "}

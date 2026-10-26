@@ -1,5 +1,5 @@
 // Facts about Alva's institutions, taken from official / news sources (checked Oct 2026).
-// Keep these accurate — update when new results are announced.
+// Keep these accurate and update when new results are announced.
 
 export const alvasSchool = {
   name: "Alva's English Medium High School",

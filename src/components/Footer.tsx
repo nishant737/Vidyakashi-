@@ -27,7 +27,7 @@ export default function Footer() {
               <a href={featuredPartner.website} target="_blank" rel="noopener" className="font-semibold text-white hover:text-sun">
                 {featuredPartner.name}
               </a>
-              <span className="text-white/60"> — {featuredPartner.place}</span>
+              <span className="text-white/60">, {featuredPartner.place}</span>
             </span>
           </div>
           <a
@@ -47,7 +47,7 @@ export default function Footer() {
               <Image src="/logo.png" alt="Vidyakashi" width={421} height={283} className="h-14 w-auto" />
             </Link>
             <p className="mt-5 text-sm leading-relaxed text-white/70">
-              Your guide to the best schools and colleges in Karnataka — compare by course
+              Your guide to the best schools and colleges in Karnataka. Compare by course
               and location, and go straight to each institution&rsquo;s official website.
             </p>
             <ul className="mt-5 flex flex-col gap-2 text-sm text-white/80">
@@ -90,7 +90,7 @@ export default function Footer() {
 
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 border-t border-white/10 py-6 text-center text-xs text-white/50 lg:justify-between lg:text-left">
           <p>© {new Date().getFullYear()} {site.name}. All rights reserved.</p>
-          <p>College details are for guidance — always confirm with the official college website.</p>
+          <p>College details are for guidance. Always confirm with the official college website.</p>
         </div>
       </div>
     </footer>

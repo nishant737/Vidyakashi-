@@ -20,7 +20,7 @@ export const schools: School[] = [
   { name: "Mallya Aditi International School", place: "Bengaluru", website: "https://www.aditi.edu.in" },
 ];
 
-/** Karnataka II PUC 2026 — state toppers reported by Daijiworld (9 April 2026). */
+/** Karnataka II PUC 2026 state toppers reported by Daijiworld (9 April 2026). */
 export const puc2026 = {
   passPercentage: "86.48%",
   topDistricts: [

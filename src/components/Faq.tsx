@@ -16,7 +16,7 @@ const faqs = [
     a: "In Commerce, Disha of Alva's College, Moodbidri secured the state first rank with a perfect 600 out of 600. In Science, Samanyu S Shetty and Nandan Nayak of Expert College topped the state with 99.67%. Udupi and Dakshina Kannada recorded the highest district pass percentages.",
   },
   {
-    q: "Which PU stream should I choose — Science, Commerce or Arts?",
+    q: "Which PU stream should I choose: Science, Commerce or Arts?",
     a: "Choose Science (PCMB/PCMC) for engineering, medicine or pure sciences; Commerce for B.Com, CA, finance and business; and Arts for humanities, law, journalism and civil services. Pick the stream that matches your interests and long-term goals.",
   },
   {

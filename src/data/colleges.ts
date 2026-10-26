@@ -30,7 +30,7 @@ export type College = {
   featured?: boolean;
 };
 
-// Location filter order — coastal Karnataka first.
+// Location filter order: coastal Karnataka first.
 export const locations = [
   "Mangaluru",
   "Udupi",
