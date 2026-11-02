@@ -1,3 +1,4 @@
+import { site } from "@/data/site";
 import { homeFaqs as faqs } from "@/data/faqs";
 
 export default function Faq() {
@@ -29,12 +30,14 @@ export default function Faq() {
             Quick answers about schools, admissions, results and entrance exams
             in Karnataka.
           </p>
-          <a
-            href="#contact"
-            className="mt-8 inline-flex items-center gap-2 font-display text-sm font-semibold text-orange-deep hover:underline"
-          >
-            Still have a question? Contact us →
-          </a>
+          {site.contactEnabled && (
+            <a
+              href="#contact"
+              className="mt-8 inline-flex items-center gap-2 font-display text-sm font-semibold text-orange-deep hover:underline"
+            >
+              Still have a question? Contact us →
+            </a>
+          )}
         </div>
 
         <div className="space-y-3 text-left">

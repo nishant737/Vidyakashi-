@@ -50,7 +50,7 @@ export default async function Home({ searchParams }: PageProps<"/">) {
         <Nudisiri />
         <Categories course={typeof course === "string" ? course : undefined} />
         <Faq />
-        <Contact />
+        {site.contactEnabled && <Contact />}
       </main>
       <Footer />
     </>

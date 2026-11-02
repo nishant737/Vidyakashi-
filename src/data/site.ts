@@ -1,6 +1,8 @@
-// TODO: replace with Vidyakashi's real contact details before going live.
+// The details below are placeholders. Replace them with real ones before setting
+// contactEnabled to true: it switches on the contact section, form and links.
 export const site = {
   name: "Vidyakashi",
+  contactEnabled: false,
   url: "https://www.vidyakashi.in",
   email: "hello@vidyakashi.com",
   phone: "+91 98765 43210",

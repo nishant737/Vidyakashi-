@@ -11,7 +11,7 @@ const quickLinks = [
   { href: "/#categories", label: "Find colleges" },
   { href: "/#faq", label: "FAQ" },
   { href: "/alvas-school-faq", label: "Alva's School FAQ" },
-  { href: "/#contact", label: "Contact Us" },
+  ...(site.contactEnabled ? [{ href: "/#contact", label: "Contact Us" }] : []),
 ];
 
 export default function Footer() {
@@ -51,14 +51,16 @@ export default function Footer() {
               Your guide to the best schools and colleges in Karnataka. Compare by course
               and location, and go straight to each institution&rsquo;s official website.
             </p>
-            <ul className="mt-5 flex flex-col gap-2 text-sm text-white/80">
-              <li>
-                <a href={`mailto:${site.email}`} className="hover:text-sun">{site.email}</a>
-              </li>
-              <li>
-                <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="hover:text-sun">{site.phone}</a>
-              </li>
-            </ul>
+            {site.contactEnabled && (
+              <ul className="mt-5 flex flex-col gap-2 text-sm text-white/80">
+                <li>
+                  <a href={`mailto:${site.email}`} className="hover:text-sun">{site.email}</a>
+                </li>
+                <li>
+                  <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="hover:text-sun">{site.phone}</a>
+                </li>
+              </ul>
+            )}
           </div>
 
           {/* Link columns */}

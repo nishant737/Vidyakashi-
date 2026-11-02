@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { site } from "@/data/site";
 import Logo from "./Logo";
 
 const links = [
@@ -8,7 +9,7 @@ const links = [
   { href: "#nudisiri", label: "Events" },
   { href: "#categories", label: "Colleges" },
   { href: "#faq", label: "FAQ" },
-  { href: "#contact", label: "Contact Us" },
+  ...(site.contactEnabled ? [{ href: "#contact", label: "Contact Us" }] : []),
 ];
 
 export default function Navbar() {
@@ -35,10 +36,10 @@ export default function Navbar() {
         </ul>
 
         <Link
-          href="#contact"
+          href={site.contactEnabled ? "#contact" : "#schools"}
           className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange to-orange-deep px-4 py-2 font-display text-sm sm:px-5 sm:py-2.5 font-semibold text-white shadow-lg shadow-orange/30 transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-orange/40"
         >
-          Get guidance
+          {site.contactEnabled ? "Get guidance" : "Find schools"}
           <Arrow />
         </Link>
       </nav>
