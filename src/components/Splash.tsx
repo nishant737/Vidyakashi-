@@ -1,7 +1,8 @@
 import Image from "next/image";
 
 // Pure-CSS splash: shows the logo, then fades away (see .splash in globals.css).
-// It lives in the root layout, so it only plays on a full page load.
+// It lives in the root layout, so it only plays on a full page load, and
+// layout.tsx skips it after the first load of a visit.
 export default function Splash() {
   return (
     <div className="splash" aria-hidden="true">

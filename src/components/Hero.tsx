@@ -26,15 +26,14 @@ export default function Hero() {
       <div className="mx-auto max-w-7xl px-4 pb-14 pt-8 sm:px-8 lg:flex lg:items-center lg:py-36">
         <div className="mx-auto max-w-xl text-center lg:mx-0 lg:text-left">
           <p className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/80 px-3.5 py-1.5 font-display text-xs font-semibold text-navy shadow-sm ring-1 ring-navy/10 backdrop-blur">
-            <span className="text-orange">★</span> Karnataka&rsquo;s school &amp; college guide
+            <span className="text-orange">★</span> Education for a brighter future
           </p>
           <h1 className="font-display text-[2.5rem] font-bold leading-[1.1] tracking-tight text-navy sm:text-5xl lg:text-6xl">
-            Education for a{" "}
+            Best Schools &amp; Colleges in{" "}
             <span className="relative inline-block">
-              Brighter
+              Karnataka
               <Swoosh />
-            </span>{" "}
-            Future
+            </span>
           </h1>
 
           {/* Mobile & tablet: photo between the heading and the text */}
@@ -53,7 +52,7 @@ export default function Hero() {
           </div>
 
           <p className="mx-auto mt-8 max-w-md text-base leading-relaxed text-navy/75 sm:text-lg lg:mx-0 lg:mt-6">
-            Discover the best schools and colleges in Karnataka: top high schools in
+            Your guide to top high schools in
             Mangaluru, Udupi and Moodbidri, II PUC toppers, and PU and degree colleges across the state.
           </p>
 

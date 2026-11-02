@@ -5,12 +5,13 @@ import { featuredPartner, site } from "@/data/site";
 
 const quickLinks = [
   { href: "/", label: "Home" },
-  { href: "#schools", label: "Top schools" },
-  { href: "#results", label: "II PUC toppers" },
-  { href: "#nudisiri", label: "Events" },
-  { href: "#categories", label: "Find colleges" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#contact", label: "Contact Us" },
+  { href: "/#schools", label: "Top schools" },
+  { href: "/#results", label: "II PUC toppers" },
+  { href: "/#nudisiri", label: "Events" },
+  { href: "/#categories", label: "Find colleges" },
+  { href: "/#faq", label: "FAQ" },
+  { href: "/alvas-school-faq", label: "Alva's School FAQ" },
+  { href: "/#contact", label: "Contact Us" },
 ];
 
 export default function Footer() {

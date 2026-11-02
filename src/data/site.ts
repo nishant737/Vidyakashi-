@@ -1,6 +1,7 @@
 // TODO: replace with Vidyakashi's real contact details before going live.
 export const site = {
   name: "Vidyakashi",
+  url: "https://www.vidyakashi.in",
   email: "hello@vidyakashi.com",
   phone: "+91 98765 43210",
   whatsapp: "919876543210",

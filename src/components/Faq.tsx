@@ -1,37 +1,4 @@
-const faqs = [
-  {
-    q: "How do I choose the right school for my child in Karnataka?",
-    a: "Look at the board (State, CBSE, ICSE or NCERT-based), board exam results, class sizes, teaching support, sports and co-curricular activities, transport and fees. Visit the campus and speak to the school office before applying.",
-  },
-  {
-    q: "Which are some of the top schools in Mangaluru, Udupi and Moodbidri?",
-    a: "Well-regarded options include Alva's English Medium High School and Alva's Central School in Moodbidri, Lourdes Central School, Manipal School and Kendriya Vidyalaya No. 1 in Mangaluru, and Silas International School in Udupi. See the schools section above for links to their official websites.",
-  },
-  {
-    q: "Where is Alva's English Medium High School and which syllabus does it follow?",
-    a: "Alva's English Medium High School is in Moodubidire (Moodbidri), Dakshina Kannada – 574227, and is run by Alva's Education Foundation. It follows the NCERT syllabus, keeps classes to a maximum of 35 students and recorded 100% SSLC results in its first five batches. For admissions, call +91 77602 72525 or email ao-schools@alvas.org.",
-  },
-  {
-    q: "Who topped the Karnataka II PUC exam in 2026?",
-    a: "In Commerce, Disha of Alva's College, Moodbidri secured the state first rank with a perfect 600 out of 600. In Science, Samanyu S Shetty and Nandan Nayak of Expert College topped the state with 99.67%. Udupi and Dakshina Kannada recorded the highest district pass percentages.",
-  },
-  {
-    q: "Which PU stream should I choose: Science, Commerce or Arts?",
-    a: "Choose Science (PCMB/PCMC) for engineering, medicine or pure sciences; Commerce for B.Com, CA, finance and business; and Arts for humanities, law, journalism and civil services. Pick the stream that matches your interests and long-term goals.",
-  },
-  {
-    q: "Which entrance exams are needed for engineering and medical courses in Karnataka?",
-    a: "KCET (conducted by KEA) and COMEDK UGET are used for engineering admissions, while MBBS and BAMS admissions are through NEET UG, with state-quota seats allotted through KEA counselling.",
-  },
-  {
-    q: "What is Alva's Nudisiri?",
-    a: "Alva's Nudisiri is the Kannada literary and cultural festival organised by Alva's Education Foundation in Moodbidri. In 2027 it is being held together with Alva's Virasat as 'Alva's Nudisiri-Virasat' from 6 to 10 January 2027.",
-  },
-  {
-    q: "Are the links on Vidyakashi official websites?",
-    a: "Yes. Every school and college link opens the institution's official website, so you can confirm the latest admission details, fees and dates directly with them.",
-  },
-];
+import { homeFaqs as faqs } from "@/data/faqs";
 
 export default function Faq() {
   const jsonLd = {
