@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Nudisiri from "@/components/Nudisiri";
 import PuResults from "@/components/PuResults";
+import SchoolSpotlight from "@/components/SchoolSpotlight";
 import TopSchools from "@/components/TopSchools";
 import { site } from "@/data/site";
 
@@ -46,6 +47,7 @@ export default async function Home({ searchParams }: PageProps<"/">) {
         <Navbar />
         <Hero />
         <TopSchools />
+        <SchoolSpotlight />
         <PuResults />
         <Nudisiri />
         <Categories course={typeof course === "string" ? course : undefined} />

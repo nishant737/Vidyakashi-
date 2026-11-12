@@ -5,7 +5,7 @@ export default function PuResults() {
   const [headline, ...rest] = puc2026.toppers;
 
   return (
-    <section id="results" className="relative scroll-mt-24 overflow-hidden bg-cream py-20 sm:py-28">
+    <section id="results" className="relative scroll-mt-24 overflow-hidden bg-white py-20 sm:py-28">
       <div className="pointer-events-none absolute -left-32 top-20 h-96 w-96 rounded-full bg-sun/40 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-8">

@@ -5,6 +5,7 @@ import Logo from "./Logo";
 const links = [
   { href: "/", label: "Home", active: true },
   { href: "#schools", label: "Schools" },
+  { href: "#spotlight", label: "Spotlight" },
   { href: "#results", label: "PUC Toppers" },
   { href: "#nudisiri", label: "Events" },
   { href: "#categories", label: "Colleges" },

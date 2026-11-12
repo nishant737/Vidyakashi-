@@ -6,6 +6,7 @@ import { featuredPartner, site } from "@/data/site";
 const quickLinks = [
   { href: "/", label: "Home" },
   { href: "/#schools", label: "Top schools" },
+  { href: "/#spotlight", label: "School spotlight" },
   { href: "/#results", label: "II PUC toppers" },
   { href: "/#nudisiri", label: "Events" },
   { href: "/#categories", label: "Find colleges" },
