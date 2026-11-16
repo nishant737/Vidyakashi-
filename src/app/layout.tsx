@@ -15,14 +15,14 @@ const lexend = Lexend({
 });
 
 const description =
-  "Compare top schools and colleges in Karnataka, including Alva's English Medium High School, Moodbidri, with II PUC 2026 toppers and official links.";
+  "A parent's guide to Alva's English Medium High School, Moodbidri: SSLC and PU results, sports, culture, the founder and admissions.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: "Best Schools & Colleges in Karnataka | Vidyakashi",
+  title: "Alva's School Moodbidri: Results, Sports, Culture & Admissions",
   description,
   openGraph: {
-    title: "Best Schools & Colleges in Karnataka | Vidyakashi",
+    title: "Alva's School Moodbidri: A Parent's Guide | Vidyakashi",
     description,
     type: "website",
     locale: "en_IN",

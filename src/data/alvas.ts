@@ -74,3 +74,42 @@ export const alvasOlympians = {
     { name: "Dhanalakshmi Shekar", sport: "Athletics", games: "Tokyo 2020" },
   ],
 };
+
+/** SSLC highlights for Alva's schools, from news reports. */
+export const alvasSslc = {
+  /** Karnataka SSLC 2026, results announced 23 April 2026 (Mangalore Today, 24 April 2026). */
+  y2026: {
+    statePass: "94.1%",
+    dkPass: "98.40%",
+    alvasTopper: { name: "Shadhvi P V", school: "Alva's School, Moodbidri", marks: 622 },
+    source: "https://www.mangaloretoday.com/main/SSLC-2026-results-Dakshina-Kannada-tops-Karnataka-with-98-40-Udupi-student-scores-perfect-625.html",
+    taluk: "https://newskarnataka.com/mangaluru/moodabidri-tops-dakshina-kannada-in-sslc-2026-sullia-second/26042026",
+  },
+  /** SSLC 2018 (Daijiworld, 9 May 2018). */
+  y2018: {
+    topper: { name: "Pranshula Prashanth", school: "Alva's English Medium School", marks: 624, rank: "State 2nd rank, district 1st" },
+    above600: 46,
+    combinedPass: "98.66%",
+    source: "https://www.daijiworld.com/news/newsDisplay.aspx?newsID=508753",
+  },
+};
+
+/** SSLC results of the high school's first five batches, from the school website. */
+export const sslcFirstBatches = [
+  { year: "2011-12", students: 8, pass: "100%", top: "574" },
+  { year: "2012-13", students: 39, pass: "100%", top: "612" },
+  { year: "2013-14", students: 69, pass: "100%", top: "612" },
+  { year: "2014-15", students: 136, pass: "100%", top: "618" },
+  { year: "2015-16", students: 251, pass: "100%", top: "618" },
+];
+
+/** Alva's II PUC state rank holders in 2025 (Alva's PU College). */
+export const pu2025RankHolders = {
+  source: "https://alvaspucollege.org/blog/who-secured-the-top-ranks-in-karnataka-2nd-puc-2025/",
+  students: [
+    { name: "Bindu Navale", stream: "Science", marks: 598 },
+    { name: "Vijet G Gowda", stream: "Science", marks: 598 },
+    { name: "Raja Yadu V Yadav", stream: "Science", marks: 598 },
+    { name: "Pranay B. Alagouda", stream: "Commerce", marks: 597 },
+  ],
+};

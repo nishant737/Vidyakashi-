@@ -4,11 +4,11 @@ import Logo from "./Logo";
 
 const links = [
   { href: "/", label: "Home", active: true },
-  { href: "#schools", label: "Schools" },
-  { href: "#spotlight", label: "Spotlight" },
-  { href: "#results", label: "PUC Toppers" },
-  { href: "#nudisiri", label: "Events" },
-  { href: "#categories", label: "Colleges" },
+  { href: "#academics", label: "Academics" },
+  { href: "#sports", label: "Sports" },
+  { href: "#culture", label: "Culture" },
+  { href: "#founder", label: "Founder" },
+  { href: "#admissions", label: "Admissions" },
   { href: "#faq", label: "FAQ" },
   ...(site.contactEnabled ? [{ href: "#contact", label: "Contact Us" }] : []),
 ];
@@ -37,10 +37,10 @@ export default function Navbar() {
         </ul>
 
         <Link
-          href={site.contactEnabled ? "#contact" : "#schools"}
+          href={site.contactEnabled ? "#contact" : "#admissions"}
           className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange to-orange-deep px-4 py-2 font-display text-sm sm:px-5 sm:py-2.5 font-semibold text-white shadow-lg shadow-orange/30 transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-orange/40"
         >
-          {site.contactEnabled ? "Get guidance" : "Find schools"}
+          {site.contactEnabled ? "Get guidance" : "How to apply"}
           <Arrow />
         </Link>
       </nav>

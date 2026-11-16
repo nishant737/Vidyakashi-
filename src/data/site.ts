@@ -10,9 +10,3 @@ export const site = {
   address: "Mangaluru, Karnataka, India",
   hours: "Mon – Sat, 9:30 AM – 6:30 PM",
 };
-
-export const featuredPartner = {
-  name: "Alva's English Medium High School",
-  place: "Moodbidri, Dakshina Kannada",
-  website: "https://alvasschools.com/alvas-english-medium-high-school/",
-};

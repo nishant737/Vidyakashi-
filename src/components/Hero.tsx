@@ -29,9 +29,9 @@ export default function Hero() {
             <span className="text-orange">★</span> Education for a brighter future
           </p>
           <h1 className="font-display text-[2.5rem] font-bold leading-[1.1] tracking-tight text-navy sm:text-5xl lg:text-6xl">
-            Best Schools &amp; Colleges in{" "}
+            Alva&rsquo;s School,{" "}
             <span className="relative inline-block">
-              Karnataka
+              Moodbidri
               <Swoosh />
             </span>
           </h1>
@@ -52,23 +52,23 @@ export default function Hero() {
           </div>
 
           <p className="mx-auto mt-8 max-w-md text-base leading-relaxed text-navy/75 sm:text-lg lg:mx-0 lg:mt-6">
-            Your guide to top high schools in
-            Mangaluru, Udupi and Moodbidri, II PUC toppers, and PU and degree colleges across the state.
+            A parent&rsquo;s guide to Alva&rsquo;s English Medium High School: results, sports,
+            culture, the founder and admissions, drawn from official records and news reports.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 lg:mt-9 lg:justify-start">
             <Link
-              href="#schools"
+              href="#overview"
               className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange to-orange-deep px-8 py-4 font-display text-sm font-semibold text-white shadow-xl shadow-orange/30 transition hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-orange/40"
             >
-              Explore top schools
+              Read the guide
               <Arrow />
             </Link>
             <Link
-              href="#categories"
+              href="#admissions"
               className="font-display text-sm font-semibold text-navy underline-offset-4 hover:underline"
             >
-              Find colleges
+              Admissions
             </Link>
           </div>
         </div>

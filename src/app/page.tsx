@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import Categories from "@/components/Categories";
 import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
+import Academics from "@/components/guide/Academics";
+import Admissions from "@/components/guide/Admissions";
+import Culture from "@/components/guide/Culture";
+import Founder from "@/components/guide/Founder";
+import OtherSchools from "@/components/guide/OtherSchools";
+import Overview from "@/components/guide/Overview";
+import Sports from "@/components/guide/Sports";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import Nudisiri from "@/components/Nudisiri";
-import PuResults from "@/components/PuResults";
-import SchoolSpotlight from "@/components/SchoolSpotlight";
-import TopSchools from "@/components/TopSchools";
 import { site } from "@/data/site";
 
-// Course filter links (/?course=...) all point search engines to the main page.
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
@@ -37,8 +38,7 @@ const jsonLd = {
   ],
 };
 
-export default async function Home({ searchParams }: PageProps<"/">) {
-  const { course } = await searchParams;
+export default function Home() {
 
   return (
     <>
@@ -46,11 +46,13 @@ export default async function Home({ searchParams }: PageProps<"/">) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <Navbar />
         <Hero />
-        <TopSchools />
-        <SchoolSpotlight />
-        <PuResults />
-        <Nudisiri />
-        <Categories course={typeof course === "string" ? course : undefined} />
+        <Overview />
+        <Academics />
+        <Sports />
+        <Culture />
+        <Founder />
+        <Admissions />
+        <OtherSchools />
         <Faq />
         {site.contactEnabled && <Contact />}
       </main>

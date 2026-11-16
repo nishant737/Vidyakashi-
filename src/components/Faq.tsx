@@ -24,11 +24,11 @@ export default function Faq() {
             FAQ
           </p>
           <h2 className="mt-3 font-display text-3xl font-bold leading-tight tracking-tight text-navy sm:text-4xl lg:text-[44px]">
-            Questions students &amp; parents ask
+            Questions parents ask about Alva&rsquo;s
           </h2>
           <p className="mt-4 text-base leading-relaxed text-navy/75 sm:text-lg">
-            Quick answers about schools, admissions, results and entrance exams
-            in Karnataka.
+            Short answers on boards, fees, results, sports, culture and free education.
+            See the full Alva&rsquo;s School FAQ for more.
           </p>
           {site.contactEnabled && (
             <a

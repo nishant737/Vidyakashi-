@@ -1,35 +1,9 @@
 // FAQ content. Every answer here must also be visible on a page: Google requires
 // FAQ structured data to match on-page text, so never add hidden-only entries.
-// `home: true` also shows the question in the homepage FAQ section.
+// `home: true` also shows the question in the homepage FAQ section; the full
+// list appears on /alvas-school-faq.
 
 export type Faq = { q: string; a: string; home?: boolean };
-
-const generalFaqs: Faq[] = [
-  {
-    q: "How do I choose the right school for my child in Karnataka?",
-    a: "Look at the board (State, CBSE, ICSE or NCERT-based), board exam results, class sizes, teaching support, sports and co-curricular activities, transport and fees. Visit the campus and speak to the school office before applying.",
-  },
-  {
-    q: "Which are some of the top schools in Mangaluru, Udupi and Moodbidri?",
-    a: "Well-regarded options include Alva's English Medium High School and Alva's Central School in Moodbidri, Lourdes Central School, Manipal School and Kendriya Vidyalaya No. 1 in Mangaluru, and Silas International School in Udupi. See the schools section above for links to their official websites.",
-  },
-  {
-    q: "Who topped the Karnataka II PUC exam in 2026?",
-    a: "In Commerce, Disha of Alva's College, Moodbidri secured the state first rank with a perfect 600 out of 600. In Science, Samanyu S Shetty and Nandan Nayak of Expert College topped the state with 99.67%. Udupi and Dakshina Kannada recorded the highest district pass percentages.",
-  },
-  {
-    q: "Which PU stream should I choose: Science, Commerce or Arts?",
-    a: "Choose Science (PCMB/PCMC) for engineering, medicine or pure sciences; Commerce for B.Com, CA, finance and business; and Arts for humanities, law, journalism and civil services. Pick the stream that matches your interests and long-term goals.",
-  },
-  {
-    q: "Which entrance exams are needed for engineering and medical courses in Karnataka?",
-    a: "KCET (conducted by KEA) and COMEDK UGET are used for engineering admissions, while MBBS and BAMS admissions are through NEET UG, with state-quota seats allotted through KEA counselling.",
-  },
-  {
-    q: "Are the links on Vidyakashi official websites?",
-    a: "Yes. Every school and college link opens the institution's official website, so you can confirm the latest admission details, fees and dates directly with them.",
-  },
-];
 
 export const alvasFaqs: Faq[] = [
   {
@@ -52,10 +26,12 @@ export const alvasFaqs: Faq[] = [
   {
     q: "Does Alva's School offer CBSE, ICSE and State Board education?",
     a: "The group runs several schools, including Alva's English Medium High School (NCERT syllabus), Alva's Central School (CBSE), Alva's ICSE School and Kannada medium schools. The foundation states it has CBSE and Karnataka state board affiliations. Confirm the board for your child's class with the admissions office.",
+    home: true,
   },
   {
     q: "What are the fees for Alva's residential school, including hostel, food and other expenses?",
     a: "We could not find an official published fee schedule, and figures on third-party listing sites are dated and conflicting, so we do not quote one here. Ask the admissions office for the current total, including hostel, food, uniform and other expenses. Call +91 77602 72525 or email ao-schools@alvas.org.",
+    home: true,
   },
   {
     q: "How good are the hostel facilities at Alva's Schools for boys and girls?",
@@ -67,11 +43,12 @@ export const alvasFaqs: Faq[] = [
   },
   {
     q: "How good are Alva's Schools academically and what are their board exam results?",
-    a: "Alva's English Medium High School recorded 100% SSLC results in each of its first five batches, from 2011-12 to 2015-16, with a top score of 618 out of 625. Those are the figures published on its website, so ask the school for its latest results.",
+    a: "Alva's English Medium High School recorded 100% SSLC results in each of its first five batches, from 2011-12 to 2015-16. In 2018, Alva's English and Kannada medium high schools together passed 98.66%, with 46 students above 600 marks. In 2026, Shadhvi P V of Alva's School scored 622 out of 625. Ask the school for its full latest results.",
+    home: true,
   },
   {
     q: "Has Alva's produced state toppers or rank holders in SSLC, CBSE or ICSE examinations?",
-    a: "Yes, in SSLC. Prajwal S of Alva's High School, Moodbidri placed first in the state's Kannada medium category in 2012 with 613 marks (98.09%). We could not confirm CBSE or ICSE rank holders. At PU level, Disha of Alva's College was the 2026 state first rank in Commerce.",
+    a: "Yes, in SSLC. Pranshula Prashanth of Alva's English Medium School secured the state 2nd rank in 2018 with 624 out of 625, and Prajwal S of Alva's High School placed first in the state's Kannada medium category in 2012 with 613 marks. We could not confirm CBSE or ICSE rank holders. At PU level, Disha of Alva's College was the 2026 state first rank in Commerce.",
   },
   {
     q: "Which school in Karnataka is best for students who want both academics and sports?",
@@ -97,15 +74,16 @@ export const alvasFaqs: Faq[] = [
   {
     q: "Does Alva's teach Yakshagana, Bharatanatyam, music, theatre and other cultural activities?",
     a: "Yes. The foundation runs Deemkita Yakshagana Adhyayana Kendra for Yakshagana, Lalithakala Adhyayana Kendra for Bharatanatyam, Carnatic music and painting, and Ranga Adhyayana Kendra for drama. Ask the school which of these are open to your child's class.",
+    home: true,
   },
   {
     q: "What are Alva's Virasat and Alva's Nudisiri, and do school students participate in them?",
     a: "Virasat is a national-level classical music and dance festival, and Nudisiri is a Kannada literary and cultural festival, both organised by Alva's Education Foundation in Moodbidri. They run together as Alva's Nudisiri-Virasat from 6 to 10 January 2027, with Vidyarthisiri on 8 January as a dedicated students' day.",
-    home: true,
   },
   {
     q: "Who is Dr. M. Mohan Alva and why did he start Alva's Education Foundation?",
     a: "Dr. M. Mohan Alva is a physician and philanthropist who founded Alva's Education Foundation in Moodbidri, which began in 1995. The foundation's stated aim is to provide quality education while anchoring young people in cultural values and patriotism.",
+    home: true,
   },
   {
     q: "What is Dr. Mohan Alva's philosophy on education, discipline, sports and culture?",
@@ -114,6 +92,7 @@ export const alvasFaqs: Faq[] = [
   {
     q: "Does Alva's provide scholarships or free education for academically, culturally or economically deserving students?",
     a: "Yes. The foundation says its adoption scheme gives free education with boarding and lodging to meritorious students, physically challenged students, students with cultural or sports talent, students from the Koraga and other selected tribes, and students from Mijar village and the local area.",
+    home: true,
   },
   {
     q: "How does Alva's balance academics, competitive exams, sports and extracurricular activities for residential students?",
@@ -125,7 +104,7 @@ export const alvasFaqs: Faq[] = [
   },
 ];
 
-export const homeFaqs: Faq[] = [...generalFaqs, ...alvasFaqs.filter((f) => f.home)];
+export const homeFaqs: Faq[] = alvasFaqs.filter((f) => f.home);
 
 export const faqSources = [
   { label: "Alva's English Medium High School", url: "https://alvasschools.com/alvas-english-medium-high-school/" },
@@ -134,5 +113,7 @@ export const faqSources = [
   { label: "The Tribune, July 2021", url: "https://www.tribuneindia.com/news/schools/from-atlanta-to-tokyo-this-karnataka-institute-has-sent-7-olympians-285380" },
   { label: "Daijiworld, May 2012", url: "https://www.daijiworld.com/news/newsDisplay.aspx?newsID=138204" },
   { label: "Daijiworld, April 2026", url: "https://www.daijiworld.com/news/newsDisplay?newsID=1311438" },
+  { label: "Daijiworld, May 2018", url: "https://www.daijiworld.com/news/newsDisplay.aspx?newsID=508753" },
+  { label: "Mangalore Today, April 2026", url: "https://www.mangaloretoday.com/main/SSLC-2026-results-Dakshina-Kannada-tops-Karnataka-with-98-40-Udupi-student-scores-perfect-625.html" },
   { label: "News Karnataka, October 2026", url: "https://newskarnataka.com/mangaluru/alvas-nudisiri-virasat-to-be-held-in-moodbidri-from-january-6-to-10/09102026/" },
 ];
