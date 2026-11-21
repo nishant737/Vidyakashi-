@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { alvasFoundation, alvasPu, alvasSchool } from "@/data/alvas";
+import { alvasFoundation, alvasPu, alvasSchool, guideUpdated } from "@/data/alvas";
 import { site } from "@/data/site";
 
 const guideLinks = [
   { href: "/#overview", label: "At a glance" },
+  { href: "/#news", label: "Alva's in 2026" },
   { href: "/#academics", label: "Academics & results" },
   { href: "/#sports", label: "Sports" },
   { href: "/#culture", label: "Culture" },
@@ -35,7 +36,7 @@ export default function Footer() {
               A parent&rsquo;s guide to Alva&rsquo;s English Medium High School, Moodbidri, drawn from
               official school records and published news reports.
             </p>
-            <p className="mt-3 text-xs text-white/50">Last reviewed: November 2026</p>
+            <p className="mt-3 text-xs text-white/50">Last reviewed: {guideUpdated}</p>
             {site.contactEnabled && (
               <ul className="mt-5 flex flex-col gap-2 text-sm text-white/80">
                 <li>

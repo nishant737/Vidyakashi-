@@ -25,7 +25,7 @@ export default function Sports() {
           dark
           eyebrow="Sports"
           title="Where talent is coached, not just encouraged"
-          intro="Alva's runs structured coaching alongside school, and a 2021 report said the foundation had adopted more than 5,000 sportspersons."
+          intro="Alva's runs structured coaching alongside school. A 2021 report said the foundation had adopted more than 5,000 sportspersons, and in September 2026 its athletes won 26 medals and set five meet records at the South Zone Junior Athletics Championship."
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
@@ -76,6 +76,7 @@ export default function Sports() {
             links={[
               { label: "school website", url: alvasSchool.website },
               { label: "The Tribune, July 2021", url: alvasOlympians.source },
+              { label: "Udayavani, September 2026", url: "https://udayavani.com/karnataka/alvas-athletes-win-26-medals-set-five-new-meet-records-466181?lang=en" },
             ]}
           />
         </div>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Logo from "@/components/Logo";
-import { alvasSchool } from "@/data/alvas";
+import { alvasSchool, guideUpdated } from "@/data/alvas";
 import { alvasFaqs, faqSources } from "@/data/faqs";
 
 const title = "Alva's School Moodbidri FAQ: Fees, Hostel, Results";
@@ -49,7 +49,7 @@ export default function AlvasSchoolFaq() {
             </a>
             .
           </p>
-          <p className="mt-2 text-sm text-navy/50">Last reviewed: November 2026</p>
+          <p className="mt-2 text-sm text-navy/50">Last reviewed: {guideUpdated}</p>
 
           <div className="mt-10 flex flex-col gap-8">
             {alvasFaqs.map((f) => (

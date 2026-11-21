@@ -9,6 +9,7 @@ import Founder from "@/components/guide/Founder";
 import OtherSchools from "@/components/guide/OtherSchools";
 import Overview from "@/components/guide/Overview";
 import Sports from "@/components/guide/Sports";
+import News from "@/components/guide/News";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import { site } from "@/data/site";
@@ -47,6 +48,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Overview />
+        <News />
         <Academics />
         <Sports />
         <Culture />

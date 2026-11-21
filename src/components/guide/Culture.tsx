@@ -53,7 +53,8 @@ export default function Culture() {
             </h3>
             <p className="mt-2 text-center text-sm text-white/70 lg:text-left">
               The {nudisiri.nudisiriEdition} Nudisiri literary festival and {nudisiri.virasatEdition} Virasat cultural
-              festival, held together on the theme &ldquo;{nudisiri.theme}&rdquo;.
+              festival, held together on the theme &ldquo;{nudisiri.theme}&rdquo;. The foundation says Nudisiri has
+              grown from about 4,000 to about 9,000 delegates a year, with free board and lodging.
             </p>
             <ul className="mt-5 flex flex-col divide-y divide-white/10">
               {festival.map((f) => (
@@ -72,6 +73,7 @@ export default function Culture() {
               { label: "about Alva's Schools", url: alvasFoundation.aboutSource },
               { label: "foundation vision", url: alvasFoundation.visionSource },
               { label: "Daijiworld, October 2026", url: "https://daijiworld.com/news/newsDisplay?newsID=1328964" },
+              { label: "Alva's Nudisiri", url: "https://alvas.org/alvas-celebrations/alvas-nudisiri/" },
             ]}
           />
         </div>

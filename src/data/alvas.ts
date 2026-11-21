@@ -113,3 +113,52 @@ export const pu2025RankHolders = {
     { name: "Pranay B. Alagouda", stream: "Commerce", marks: 597 },
   ],
 };
+
+/** Dated news and milestones for the "Alva's in 2026" timeline. Newest first. */
+export const alvasNews = [
+  {
+    date: "6-10 Jan 2027",
+    title: "Alva's Nudisiri-Virasat comes to Moodbidri",
+    text: "The 17th Nudisiri and 31st Virasat run together for five days, with a students' day on 8 January.",
+    source: { label: "Daijiworld", url: "https://daijiworld.com/news/newsDisplay?newsID=1328964" },
+    upcoming: true,
+  },
+  {
+    date: "Sep 2026",
+    title: "26 medals at the South Zone Junior Athletics",
+    text: "Alva's athletes won 26 medals and set five meet records at the championship in Puducherry.",
+    source: { label: "Udayavani", url: "https://udayavani.com/karnataka/alvas-athletes-win-26-medals-set-five-new-meet-records-466181?lang=en" },
+  },
+  {
+    date: "Jul 2026",
+    title: "150 MBBS seats approved for a new Alva's medical college",
+    text: "The National Medical Commission approved 150 MBBS seats from 2026-27 for Alva's Institute of Medical Sciences and Research Center on the Mijar campus.",
+    source: { label: "Mega Media News", url: "https://megamedianews.com/milestone-achievement-national-medical-commission-approves-150-mbbs-seats-for-alvas-medical-college-moodbidri-from-academic-year-2026-27/" },
+  },
+  {
+    date: "May 2026",
+    title: "Yakshadhruva Mahaposaka Award for Dr. M. Mohan Alva",
+    text: "Udayavani reported the award to the founder, with Polya receiving the Yakshadhruva Patla Award.",
+    source: { label: "Udayavani", url: "https://udayavani.com/karnataka/dr-mohan-alva-conferred-yakshadhruva-mahaposaka-award-polya-honoured-with-yakshadhruva-patla-award-572892?lang=en" },
+  },
+  {
+    date: "Apr 2026",
+    title: "622/625 in SSLC, and Moodabidri tops the district",
+    text: "Shadhvi P V of Alva's School scored 622, as Dakshina Kannada ranked first in Karnataka.",
+    source: { label: "Mangalore Today", url: "https://www.mangaloretoday.com/main/SSLC-2026-results-Dakshina-Kannada-tops-Karnataka-with-98-40-Udupi-student-scores-perfect-625.html" },
+  },
+  {
+    date: "Apr 2026",
+    title: "II PUC state first rank in Commerce",
+    text: "Disha of Alva's College, Moodbidri scored a perfect 600 out of 600.",
+    source: { label: "Daijiworld", url: "https://www.daijiworld.com/news/newsDisplay?newsID=1311438" },
+  },
+  {
+    date: "Mar 2026",
+    title: "FRAV Fellowship for Dr. M. Mohan Alva",
+    text: "The Rashtriya Ayurveda Vidyapeeth, under the Ministry of AYUSH, honoured his work in Ayurveda at its convocation at Banaras Hindu University.",
+    source: { label: "The Hans India", url: "https://www.thehansindia.com/karnataka/ayurveda-educationist-conferred-frav-fellowship-1058113" },
+  },
+];
+
+export const guideUpdated = "21 November 2026";

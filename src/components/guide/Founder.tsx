@@ -21,11 +21,27 @@ export default function Founder() {
             The foundation&rsquo;s stated vision: young people rooted in their culture can drive social
             growth and reach the wider world.
           </blockquote>
+          <div className="mt-8 rounded-2xl bg-white p-5 ring-1 ring-navy/5">
+            <p className="text-center font-display text-sm font-semibold uppercase tracking-[0.15em] text-orange-deep lg:text-left">
+              Honours in 2026
+            </p>
+            <ul className="mt-3 flex flex-col gap-2 text-sm text-navy/80">
+              <li>
+                <strong className="text-navy">FRAV Fellowship</strong> from the Rashtriya Ayurveda Vidyapeeth (Ministry of
+                AYUSH), March 2026
+              </li>
+              <li>
+                <strong className="text-navy">Yakshadhruva Mahaposaka Award</strong>, May 2026
+              </li>
+            </ul>
+          </div>
           <div className="mt-8">
             <Sources
               links={[
                 { label: "about Alva's Schools", url: alvasFoundation.aboutSource },
                 { label: "foundation vision", url: alvasFoundation.visionSource },
+                { label: "The Hans India", url: "https://www.thehansindia.com/karnataka/ayurveda-educationist-conferred-frav-fellowship-1058113" },
+                { label: "Udayavani", url: "https://udayavani.com/karnataka/dr-mohan-alva-conferred-yakshadhruva-mahaposaka-award-polya-honoured-with-yakshadhruva-patla-award-572892?lang=en" },
               ]}
             />
           </div>

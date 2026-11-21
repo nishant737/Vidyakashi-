@@ -27,12 +27,12 @@ export default function Academics() {
   const disha = puc2026.toppers[0];
 
   return (
-    <section id="academics" className="scroll-mt-24 bg-cream py-20 sm:py-28">
+    <section id="academics" className="scroll-mt-24 bg-white py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
         <SectionHeader
           eyebrow="Academics & results"
           title="A consistent SSLC record, and a clear path to PU"
-          intro="The high school's results go back to its first batch in 2011-12. Students can then continue to Alva's Pre-University College in Moodbidri."
+          intro="The high school's results go back to its first batch in 2011-12. Students can continue to Alva's Pre-University College in Moodbidri, and from 2026-27 the foundation's new Alva's Institute of Medical Sciences and Research Center has 150 MBBS seats approved by the National Medical Commission."
         />
 
         {/* Milestones */}

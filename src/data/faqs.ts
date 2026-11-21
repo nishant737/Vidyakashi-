@@ -65,7 +65,7 @@ export const alvasFaqs: Faq[] = [
   },
   {
     q: "Which famous athletes or national and international sportspersons have studied or trained at Alva's?",
-    a: "A 2021 Tribune report linked seven Olympians to Alva's: Satheesha Rai, MR Poovamma, Dharun, Mohan Kumar, Ashwini Akkunji, Shubha Venkateshan and Dhanalakshmi Shekar.",
+    a: "A 2021 Tribune report linked seven Olympians to Alva's: Satheesha Rai, MR Poovamma, Dharun, Mohan Kumar, Ashwini Akkunji, Shubha Venkateshan and Dhanalakshmi Shekar. More recently, in September 2026, Alva's athletes won 26 medals and set five meet records at the South Zone Junior Athletics Championship in Puducherry.",
   },
   {
     q: "How much importance does Alva's give to Indian culture, traditions and values?",
@@ -82,7 +82,7 @@ export const alvasFaqs: Faq[] = [
   },
   {
     q: "Who is Dr. M. Mohan Alva and why did he start Alva's Education Foundation?",
-    a: "Dr. M. Mohan Alva is a physician and philanthropist who founded Alva's Education Foundation in Moodbidri, which began in 1995. The foundation's stated aim is to provide quality education while anchoring young people in cultural values and patriotism.",
+    a: "Dr. M. Mohan Alva is a physician and philanthropist who founded Alva's Education Foundation in Moodbidri, which began in 1995. The foundation's stated aim is to provide quality education while anchoring young people in cultural values and patriotism. In 2026 he received the FRAV Fellowship from the Rashtriya Ayurveda Vidyapeeth and the Yakshadhruva Mahaposaka Award.",
     home: true,
   },
   {
@@ -100,7 +100,7 @@ export const alvasFaqs: Faq[] = [
   },
   {
     q: "Should I send my child to Alva's residential school? What are the advantages and disadvantages?",
-    a: "Advantages include strong sports and cultural programmes and a clear path to PU and degree study within one foundation. Possible drawbacks are time away from family and the adjustment to a very large campus. Choose it if your child is ready for hostel life, and visit before deciding.",
+    a: "Advantages include strong sports and cultural programmes and a clear path to PU, degree and professional study, including a new MBBS programme from 2026-27, within one foundation. Possible drawbacks are time away from family and the adjustment to a very large campus. Choose it if your child is ready for hostel life, and visit before deciding.",
   },
 ];
 
@@ -115,5 +115,8 @@ export const faqSources = [
   { label: "Daijiworld, April 2026", url: "https://www.daijiworld.com/news/newsDisplay?newsID=1311438" },
   { label: "Daijiworld, May 2018", url: "https://www.daijiworld.com/news/newsDisplay.aspx?newsID=508753" },
   { label: "Mangalore Today, April 2026", url: "https://www.mangaloretoday.com/main/SSLC-2026-results-Dakshina-Kannada-tops-Karnataka-with-98-40-Udupi-student-scores-perfect-625.html" },
+  { label: "Udayavani, September 2026", url: "https://udayavani.com/karnataka/alvas-athletes-win-26-medals-set-five-new-meet-records-466181?lang=en" },
+  { label: "The Hans India, March 2026", url: "https://www.thehansindia.com/karnataka/ayurveda-educationist-conferred-frav-fellowship-1058113" },
+  { label: "Mega Media News, July 2026", url: "https://megamedianews.com/milestone-achievement-national-medical-commission-approves-150-mbbs-seats-for-alvas-medical-college-moodbidri-from-academic-year-2026-27/" },
   { label: "News Karnataka, October 2026", url: "https://newskarnataka.com/mangaluru/alvas-nudisiri-virasat-to-be-held-in-moodbidri-from-january-6-to-10/09102026/" },
 ];

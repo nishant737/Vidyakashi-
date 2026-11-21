@@ -11,6 +11,7 @@ const facts = [
 ];
 
 const sections = [
+  { href: "#news", title: "Alva's in 2026", text: "The latest results, medals, new courses and honours." },
   { href: "#academics", title: "Academics & results", text: "SSLC and II PUC records, teaching support and the path to PU." },
   { href: "#sports", title: "Sports", text: "Facilities, the free sports quota and Olympians linked to Alva's." },
   { href: "#culture", title: "Culture", text: "Yakshagana, dance, music, drama and the Nudisiri-Virasat festival." },
