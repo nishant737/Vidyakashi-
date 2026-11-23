@@ -10,3 +10,10 @@ export const site = {
   address: "Mangaluru, Karnataka, India",
   hours: "Mon – Sat, 9:30 AM – 6:30 PM",
 };
+
+/** Homepage title and description, shared by the page metadata and structured data. */
+export const home = {
+  title: "Alva's School Moodbidri: Results, Sports, Culture & Admissions",
+  description:
+    "A parent's guide to Alva's English Medium High School, Moodbidri: SSLC and PU results, sports, culture, the founder and admissions.",
+};

@@ -12,35 +12,24 @@ import Sports from "@/components/guide/Sports";
 import News from "@/components/guide/News";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import { site } from "@/data/site";
+import { events, foundation, founder, graph, organization, school, webPage, website } from "@/data/schema";
+import { home, site } from "@/data/site";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": `${site.url}/#organization`,
-      name: site.name,
-      url: site.url,
-      logo: `${site.url}/logo.png`,
-    },
-    {
-      "@type": "WebSite",
-      "@id": `${site.url}/#website`,
-      name: site.name,
-      url: site.url,
-      inLanguage: "en-IN",
-      publisher: { "@id": `${site.url}/#organization` },
-    },
-  ],
-};
+const jsonLd = graph(
+  organization,
+  website,
+  webPage("/", home.title, home.description),
+  school,
+  foundation,
+  founder,
+  ...events,
+);
 
 export default function Home() {
-
   return (
     <>
       <main className="flex-1">

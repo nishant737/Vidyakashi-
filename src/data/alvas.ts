@@ -175,3 +175,26 @@ export const alvasNews = [
 ];
 
 export const guideUpdated = "23 November 2026";
+/** Same date in ISO format, for structured data and the sitemap. Update both together. */
+export const guideUpdatedISO = "2026-11-23";
+
+/** Upcoming events, described as schema.org Events. Remove or update them once they have passed. */
+export const alvasEvents = [
+  {
+    name: "Ninasam Theatre Festival at Alva's",
+    description: "Two evenings of Kannada theatre hosted by Alva's Rangadhyayana Kendra: Paduka Kireeti on 25 November and Kola on 26 November.",
+    startDate: "2026-11-25T18:45:00+05:30",
+    endDate: "2026-11-26",
+    venue: "V.S. Acharya Auditorium, Alva's campus",
+    free: true,
+    source: "https://pingara.com/kannada-news/neenasam-theatre-festival-at-alvas-on-nov-25-and-26/",
+  },
+  {
+    name: "Alva's Nudisiri-Virasat 2027",
+    description: "The 17th Alva's Nudisiri literary festival and 31st Alva's Virasat cultural festival, held together on the theme 'Kannada Manassu: Bhavishyada Kanasu'.",
+    startDate: "2027-01-06",
+    endDate: "2027-01-10",
+    venue: "Moodbidri",
+    source: "https://daijiworld.com/news/newsDisplay?newsID=1328964",
+  },
+];

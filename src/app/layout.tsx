@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Lexend } from "next/font/google";
 import Splash from "@/components/Splash";
-import { site } from "@/data/site";
+import { home, site } from "@/data/site";
 import "./globals.css";
 
 const inter = Inter({
@@ -14,12 +14,11 @@ const lexend = Lexend({
   subsets: ["latin"],
 });
 
-const description =
-  "A parent's guide to Alva's English Medium High School, Moodbidri: SSLC and PU results, sports, culture, the founder and admissions.";
+const description = home.description;
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: "Alva's School Moodbidri: Results, Sports, Culture & Admissions",
+  title: home.title,
   description,
   openGraph: {
     title: "Alva's School Moodbidri: A Parent's Guide | Vidyakashi",

@@ -4,6 +4,8 @@ import Footer from "@/components/Footer";
 import Logo from "@/components/Logo";
 import { alvasSchool, guideUpdated } from "@/data/alvas";
 import { alvasFaqs, faqSources } from "@/data/faqs";
+import { graph, webPage } from "@/data/schema";
+import { site } from "@/data/site";
 
 const title = "Alva's School Moodbidri FAQ: Fees, Hostel, Results";
 const description =
@@ -17,15 +19,24 @@ export const metadata: Metadata = {
 };
 
 export default function AlvasSchoolFaq() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: alvasFaqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
+  const jsonLd = graph(
+    webPage("/alvas-school-faq", title, description),
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: site.url },
+        { "@type": "ListItem", position: 2, name: "Alva's School FAQ", item: `${site.url}/alvas-school-faq` },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: alvasFaqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    },
+  );
 
   return (
     <>
