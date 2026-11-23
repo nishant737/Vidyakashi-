@@ -117,6 +117,13 @@ export const pu2025RankHolders = {
 /** Dated news and milestones for the "Alva's in 2026" timeline. Newest first. */
 export const alvasNews = [
   {
+    date: "25-26 Nov 2026",
+    title: "Ninasam theatre festival at Alva's",
+    text: "Alva's Rangadhyayana Kendra hosts two evenings of Kannada theatre at the V.S. Acharya Auditorium, 6:45 pm, with free entry: Paduka Kireeti on 25 November and Kola on 26 November.",
+    source: { label: "Pingara", url: "https://pingara.com/kannada-news/neenasam-theatre-festival-at-alvas-on-nov-25-and-26/" },
+    upcoming: true,
+  },
+  {
     date: "6-10 Jan 2027",
     title: "Alva's Nudisiri-Virasat comes to Moodbidri",
     text: "The 17th Nudisiri and 31st Virasat run together for five days, with a students' day on 8 January.",
@@ -128,6 +135,12 @@ export const alvasNews = [
     title: "26 medals at the South Zone Junior Athletics",
     text: "Alva's athletes won 26 medals and set five meet records at the championship in Puducherry.",
     source: { label: "Udayavani", url: "https://udayavani.com/karnataka/alvas-athletes-win-26-medals-set-five-new-meet-records-466181?lang=en" },
+  },
+  {
+    date: "Aug 2026",
+    title: "Alva's Pragati 2026 job fair: 2,394 on-the-spot offers",
+    text: "The 16th edition of the free two-day job fair at the Vidyagiri campus drew 15,539 job seekers and 332 companies.",
+    source: { label: "Vaibhav News", url: "https://www.vaibhavnews.com/2026/08/2026-15539-2394.html" },
   },
   {
     date: "Jul 2026",
@@ -161,4 +174,4 @@ export const alvasNews = [
   },
 ];
 
-export const guideUpdated = "21 November 2026";
+export const guideUpdated = "23 November 2026";

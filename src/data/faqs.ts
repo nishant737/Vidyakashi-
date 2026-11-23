@@ -73,7 +73,7 @@ export const alvasFaqs: Faq[] = [
   },
   {
     q: "Does Alva's teach Yakshagana, Bharatanatyam, music, theatre and other cultural activities?",
-    a: "Yes. The foundation runs Deemkita Yakshagana Adhyayana Kendra for Yakshagana, Lalithakala Adhyayana Kendra for Bharatanatyam, Carnatic music and painting, and Ranga Adhyayana Kendra for drama. Ask the school which of these are open to your child's class.",
+    a: "Yes. The foundation runs Deemkita Yakshagana Adhyayana Kendra for Yakshagana, Lalithakala Adhyayana Kendra for Bharatanatyam, Carnatic music and painting, and Ranga Adhyayana Kendra for drama, which also brings touring productions to campus, such as the Ninasam theatre festival on 25 and 26 November 2026. Ask the school which of these are open to your child's class.",
     home: true,
   },
   {
@@ -115,6 +115,7 @@ export const faqSources = [
   { label: "Daijiworld, April 2026", url: "https://www.daijiworld.com/news/newsDisplay?newsID=1311438" },
   { label: "Daijiworld, May 2018", url: "https://www.daijiworld.com/news/newsDisplay.aspx?newsID=508753" },
   { label: "Mangalore Today, April 2026", url: "https://www.mangaloretoday.com/main/SSLC-2026-results-Dakshina-Kannada-tops-Karnataka-with-98-40-Udupi-student-scores-perfect-625.html" },
+  { label: "Pingara, November 2026", url: "https://pingara.com/kannada-news/neenasam-theatre-festival-at-alvas-on-nov-25-and-26/" },
   { label: "Udayavani, September 2026", url: "https://udayavani.com/karnataka/alvas-athletes-win-26-medals-set-five-new-meet-records-466181?lang=en" },
   { label: "The Hans India, March 2026", url: "https://www.thehansindia.com/karnataka/ayurveda-educationist-conferred-frav-fellowship-1058113" },
   { label: "Mega Media News, July 2026", url: "https://megamedianews.com/milestone-achievement-national-medical-commission-approves-150-mbbs-seats-for-alvas-medical-college-moodbidri-from-academic-year-2026-27/" },
